@@ -166,7 +166,7 @@ int hash_generate_test_vectors(){
 
 	lwc_printf("\n\n\n\nStarting...\nOptimization: %s\nAlgorithm: %s\n", OPTIMIZATION_LEVEL, algo_name_str );
 
-	for (unsigned long long mlen = 0; mlen <= MAX_MESSAGE_LENGTH; mlen += 256) {
+	for (unsigned long long mlen = 16; mlen <= MAX_MESSAGE_LENGTH; mlen += 256) {
 
 
 		lwc_printf("msg_len:%04d ", (int)mlen);

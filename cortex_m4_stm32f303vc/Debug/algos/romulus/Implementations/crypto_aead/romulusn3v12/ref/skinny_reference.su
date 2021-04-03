@@ -1,0 +1,15 @@
+skinny_reference.c:61:6:AddKey	88	static
+skinny_reference.c:125:6:AddKey_inv	88	static
+skinny_reference.c:190:6:AddConstants	16	static
+skinny_reference.c:198:6:SubCell4	24	static
+skinny_reference.c:207:6:SubCell4_inv	24	static
+skinny_reference.c:216:6:SubCell8	24	static
+skinny_reference.c:225:6:SubCell8_inv	24	static
+skinny_reference.c:234:6:ShiftRows	48	static
+skinny_reference.c:259:6:ShiftRows_inv	48	static
+skinny_reference.c:289:6:MixColumn	24	static
+skinny_reference.c:308:6:MixColumn_inv	24	static
+skinny_reference.c:327:6:dec	112	static
+skinny_reference.c:418:6:enc	96	static
+skinny_reference.c:501:6:skinny_128_256_enc	16	static
+skinny_reference.c:506:6:TestVectors	104	static
