@@ -4,7 +4,7 @@ genkat_src/genkat_aead_hash.o: \
  C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/crypto_hash.h \
  C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_config.h \
  C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_api.h \
- c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\romulus\implementations\crypto_aead\romulusn3v12\ref\api.h \
+ c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\xoodyak\implementations\crypto_hash\xoodyakv1\ref\api.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h \
  ../Core/Inc/stm32f3xx_hal_conf.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h \
@@ -44,7 +44,7 @@ C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/l
 
 C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_api.h:
 
-c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\romulus\implementations\crypto_aead\romulusn3v12\ref\api.h:
+c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\xoodyak\implementations\crypto_hash\xoodyakv1\ref\api.h:
 
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:
 

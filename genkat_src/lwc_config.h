@@ -8,12 +8,12 @@
 #ifndef INC_LWC_CONFIG_H_
 #define INC_LWC_CONFIG_H_
 
-#define OPTIMIZATION_LEVEL	"O0"
-#pragma GCC optimize ("O0")   //O0 O1 O2 O3 Os Ofast
+#define OPTIMIZATION_LEVEL	"O3"
+#pragma GCC optimize ("O3")   //O0 O1 O2 O3 Os Ofast
 
 
-#define LWC_ALGO_AEAD
-//#define LWC_ALGO_HASH
+//#define LWC_ALGO_AEAD
+#define LWC_ALGO_HASH
 
 #ifdef LWC_ALGO_AEAD
 //#define LWC_ALGO_AEAD_ELEPHANT_160V1
@@ -81,7 +81,7 @@
 
 #ifdef LWC_ALGO_HASH
 
-//#define LWC_ALGO_HASH_XOODYAKV1
+#define LWC_ALGO_HASH_XOODYAKV1
 
 //#define LWC_ALGO_HASH_ACEHASH256v1
 //#define LWC_ALGO_HASH_ASCONHASHv12
