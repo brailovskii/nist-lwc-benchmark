@@ -1,7 +1,7 @@
-genkat_aead_hash.c:73:5:genkat_benchmark_hash_aead	16	static
-genkat_aead_hash.c:94:5:aead_generate_test_vectors	288	static
-genkat_aead_hash.c:195:6:init_buffer	32	static
-genkat_aead_hash.c:222:6:HAL_TIM_PeriodElapsedCallback	16	static
-genkat_aead_hash.c:226:6:tick_msr_start	8	static
-genkat_aead_hash.c:233:10:tick_msr_end	8	static
-genkat_aead_hash.c:240:6:lwc_printf	16	static
+genkat_aead_hash.c:76:5:genkat_benchmark_hash_aead	16	static
+genkat_aead_hash.c:176:5:hash_generate_test_vectors	1088	static
+genkat_aead_hash.c:216:6:init_buffer	32	static
+genkat_aead_hash.c:236:6:HAL_TIM_PeriodElapsedCallback	16	static
+genkat_aead_hash.c:240:6:tick_msr_start	8	static
+genkat_aead_hash.c:248:10:tick_msr_end	8	static
+genkat_aead_hash.c:256:6:lwc_printf	16	static

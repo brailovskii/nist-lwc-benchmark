@@ -1,2 +1,0 @@
-encrypt.c:28:5:crypto_aead_encrypt	112	static
-encrypt.c:59:5:crypto_aead_decrypt	136	static

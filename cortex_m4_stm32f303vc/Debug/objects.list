@@ -131,3 +131,4 @@
 "algos/xoodyak/Implementations/crypto_hash/xoodyakv1/ref/Xoodyak.o"
 "algos/xoodyak/Implementations/crypto_hash/xoodyakv1/ref/hash.o"
 "genkat_src/genkat_aead_hash.o"
+"genkat_src/mem_stat.o"

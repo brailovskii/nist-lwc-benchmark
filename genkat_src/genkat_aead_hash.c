@@ -41,22 +41,19 @@
 #include <stdarg.h>
 #include "lwc_config.h"
 #include "lwc_api.h"
-
-
+#include "mem_stat.h"
 
 #define KAT_SUCCESS          0
 #define KAT_FILE_OPEN_ERROR -1
 #define KAT_DATA_ERROR      -3
 #define KAT_CRYPTO_FAILURE  -4
 
-#define MAX_FILE_NAME				256
 
-
+#define ENABLE_ALGO_TEST
 
 void tick_msr_start(void);
 uint32_t tick_msr_end(void);
-void lwc_printf(const char* format, ...);
-
+void lwc_printf(const char *format, ...);
 
 void init_buffer(unsigned char *buffer, unsigned long long numbytes);
 int aead_generate_test_vectors();
@@ -64,14 +61,32 @@ int hash_generate_test_vectors();
 
 
 
+static uint32_t gb_tick_cnt = 0;
+static uint32_t gb_ms_ticks = 0;
+static const char algo_name_str[128] = ALGO_NAME_STR;
 
-static uint32_t gb_tick_cnt;
-char algo_name_str[128] = ALGO_NAME_STR;
+
+#ifdef ENABLE_ALGO_TEST
+static const char algo_en_dis_str[128] = "Test Enabled";
+#else
+static const char algo_en_dis_str[128] = "Test Disabled";
+#endif
 
 
+int genkat_benchmark_hash_aead(void) {
 
-int genkat_benchmark_hash_aead(void)
-{
+	get_memory_usage();
+
+	/*clear timers ticks before testing*/
+	tick_msr_start();
+	tick_msr_end();
+
+	lwc_printf("\n\n\n\nStarting...\n%s\n"__DATE__" "__TIME__"\nOptimization: "OPTIMIZATION_LEVEL"\nAlgorithm: %s\n",algo_en_dis_str, algo_name_str);
+	lwc_printf("Memory usage: ");
+	lwc_printf("Total FLASH: %6luB Total RAM: %6luB \n", mem_stat.tot_flash_usg, mem_stat.tot_ram_usg);
+	lwc_printf("Sections: text %6luB data %6luB bss %6luB\n", mem_stat.text_size, mem_stat.data_size, mem_stat.bss_size);
+
+
 #ifdef LWC_ALGO_AEAD
 	int ret = aead_generate_test_vectors();
 #endif
@@ -83,25 +98,20 @@ int genkat_benchmark_hash_aead(void)
 	return ret;
 }
 
-
-
 #ifdef LWC_ALGO_AEAD
 
 #define MAX_MESSAGE_LENGTH			32
 #define MAX_ASSOCIATED_DATA_LENGTH	32
 
-
-int aead_generate_test_vectors()
-{
-	unsigned char       key[CRYPTO_KEYBYTES];
-	unsigned char		nonce[CRYPTO_NPUBBYTES];
-	unsigned char       msg[MAX_MESSAGE_LENGTH];
-	unsigned char       msg2[MAX_MESSAGE_LENGTH];
-	unsigned char		ad[MAX_ASSOCIATED_DATA_LENGTH];
-	unsigned char		ct[MAX_MESSAGE_LENGTH + CRYPTO_ABYTES];
-	unsigned long long  clen, mlen2;
-	int                 func_ret = 0, ret_val = KAT_SUCCESS;
-
+int aead_generate_test_vectors() {
+	unsigned char key[CRYPTO_KEYBYTES];
+	unsigned char nonce[CRYPTO_NPUBBYTES];
+	unsigned char msg[MAX_MESSAGE_LENGTH];
+	unsigned char msg2[MAX_MESSAGE_LENGTH];
+	unsigned char ad[MAX_ASSOCIATED_DATA_LENGTH];
+	unsigned char ct[MAX_MESSAGE_LENGTH + CRYPTO_ABYTES];
+	unsigned long long clen, mlen2;
+	int func_ret = 0, ret_val = KAT_SUCCESS;
 
 	init_buffer(key, sizeof(key));
 	init_buffer(nonce, sizeof(nonce));
@@ -109,41 +119,49 @@ int aead_generate_test_vectors()
 	init_buffer(ad, sizeof(ad));
 
 
-	lwc_printf("\n\n\n\nStarting...\nOptimization: %s\nAlgorithm: %s\n", OPTIMIZATION_LEVEL, algo_name_str );
-
 	for (unsigned long long mlen = 0; (mlen <= MAX_MESSAGE_LENGTH) && (ret_val == KAT_SUCCESS); mlen += 8) {
 
 		for (unsigned long long adlen = 0; adlen <= MAX_ASSOCIATED_DATA_LENGTH; adlen += 8) {
 
-			lwc_printf("msg_len:%02d ad_len:%02d  ", (int)mlen, (int)adlen);
+			lwc_printf("msg_len:%4d ad_len:%4d  ", (int) mlen, (int) adlen);
 
 			tick_msr_start();
-			func_ret = crypto_aead_encrypt(ct, &clen, msg, mlen, ad, adlen, NULL, nonce, key);
+#ifdef ENABLE_ALGO_TEST
+			func_ret = crypto_aead_encrypt(ct, &clen, msg, mlen, ad, adlen,	NULL, nonce, key);
+#else
+			func_ret = 0;
+#endif
 			tick_msr_end();
 
-			lwc_printf( "enc:%08lu us:%08lu ", gb_tick_cnt, gb_tick_cnt/16);
+			lwc_printf("enc:%8lu us:%8lu ms:%8lu   ", gb_tick_cnt, gb_tick_cnt / 16, gb_ms_ticks);
 
-			if ( func_ret != 0) {
+			if (func_ret != 0) {
 				ret_val = KAT_CRYPTO_FAILURE;
 				break;
 			}
 
 			tick_msr_start();
+#ifdef ENABLE_ALGO_TEST
 			func_ret = crypto_aead_decrypt(msg2, &mlen2, NULL, ct, clen, ad, adlen, nonce, key);
+#else
+			func_ret = 0;
+#endif
 			tick_msr_end();
 
-			lwc_printf( "dec:%08lu us:%08lu \n", gb_tick_cnt, gb_tick_cnt/16);
+			lwc_printf("dec:%8lu us:%8lu ms:%8lu \n", gb_tick_cnt, gb_tick_cnt / 16, gb_ms_ticks);
 
-			if ( (func_ret != 0) || (mlen != mlen2) || (memcmp(msg, msg2, mlen) != 0) ) {
+#ifdef ENABLE_ALGO_TEST
+			if ((func_ret != 0) || (mlen != mlen2)	|| (memcmp(msg, msg2, mlen) != 0)) {
 				ret_val = KAT_CRYPTO_FAILURE;
 				break;
 			}
+#endif
 
 		}
 	}
 
-	if(ret_val !=0 ){
-		lwc_printf( "Error occurred\n");
+	if (ret_val != 0) {
+		lwc_printf("Error occurred\n");
 	}
 
 	return ret_val;
@@ -164,22 +182,29 @@ int hash_generate_test_vectors(){
 
 	init_buffer(msg, sizeof(msg));
 
-	lwc_printf("\n\n\n\nStarting...\nOptimization: %s\nAlgorithm: %s\n", OPTIMIZATION_LEVEL, algo_name_str );
 
-	for (unsigned long long mlen = 16; mlen <= MAX_MESSAGE_LENGTH; mlen += 256) {
+	for (unsigned long long mlen = 0; mlen <= MAX_MESSAGE_LENGTH; mlen *= 2) {
 
-
-		lwc_printf("msg_len:%04d ", (int)mlen);
+		lwc_printf("msg_len:%6d ", (int)mlen);
 
 		tick_msr_start();
+#ifdef ENABLE_ALGO_TEST
 		ret_val = crypto_hash(digest, msg, mlen);
+#else
+		ret_val = 0;
+#endif
+
 		tick_msr_end();
 
 		if(ret_val == 0) {
-			lwc_printf( "hash:%08lu us:%08lu \n", gb_tick_cnt, gb_tick_cnt/16);
+			lwc_printf( "hash:%8lu us:%8lu ms:%8lu \n", gb_tick_cnt, gb_tick_cnt/16, gb_ms_ticks);
 		}else{
 			ret_val = KAT_CRYPTO_FAILURE;
 			break;
+		}
+
+		if(mlen==0){
+			mlen = 4;
 		}
 	}
 
@@ -188,24 +213,14 @@ int hash_generate_test_vectors(){
 
 #endif
 
-
-
-
-void init_buffer(unsigned char *buffer, unsigned long long numbytes)
-{
-	for (unsigned long long i = 0; i < numbytes; i++)
-		buffer[i] = (unsigned char)i + '0';
+void init_buffer(unsigned char *buffer, unsigned long long numbytes) {
+	for (unsigned long long i = 0; i < numbytes; i++) {
+		buffer[i] = (unsigned char) i + '0';
+	}
 }
 
-
-
-
-
-
 #define PLATFORM_CORTEX_M
-
 #ifdef PLATFORM_CORTEX_M
-
 
 #ifdef STM32F303xC
 #include "stm32f3xx_hal.h"
@@ -218,36 +233,37 @@ uint32_t tim_per_elp_cnt = 0;
 extern TIM_HandleTypeDef htim6;
 extern UART_HandleTypeDef huart1;
 
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	tim_per_elp_cnt++;
 }
 
-void tick_msr_start(void){
+void tick_msr_start(void) {
 
 	tim_per_elp_cnt = 0;
 	htim6.Instance->CNT = 0;
+	gb_ms_ticks = HAL_GetTick();
 	HAL_TIM_Base_Start_IT(&htim6);
 }
 
-uint32_t tick_msr_end(void){
+uint32_t tick_msr_end(void) {
 
 	HAL_TIM_Base_Stop_IT(&htim6);
-	gb_tick_cnt = tim_per_elp_cnt<<16 | htim6.Instance->CNT;
+	gb_tick_cnt = tim_per_elp_cnt << 16 | htim6.Instance->CNT;
+	gb_ms_ticks = HAL_GetTick() - gb_ms_ticks; //get elapsed ticks in ms
 	return gb_tick_cnt;
 }
 
-void lwc_printf(const char* format, ...){
+void lwc_printf(const char *format, ...) {
 
 	static char dbg_out_buf[512];
 	va_list args;
 
-	va_start(args,format);
-	vsprintf (dbg_out_buf, format, args );
+	va_start(args, format);
+	vsprintf(dbg_out_buf, format, args);
 	va_end(args);
 
-	HAL_UART_Transmit(&huart1, (uint8_t *)dbg_out_buf, strlen(dbg_out_buf), 100);
+	HAL_UART_Transmit(&huart1, (uint8_t*) dbg_out_buf, strlen(dbg_out_buf), 100);
 }
 
 #endif
-
 
