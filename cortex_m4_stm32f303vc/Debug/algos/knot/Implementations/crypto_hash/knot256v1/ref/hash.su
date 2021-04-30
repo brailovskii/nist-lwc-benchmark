@@ -1,0 +1,4 @@
+hash.c:17:6:load64	48	static
+hash.c:24:6:store64	40	static
+hash.c:30:6:permutation256	296	static
+hash.c:68:5:crypto_hash	112	dynamic

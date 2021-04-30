@@ -49,7 +49,7 @@
 #define KAT_CRYPTO_FAILURE  -4
 
 
-#define ENABLE_ALGO_TEST
+
 
 void tick_msr_start(void);
 uint32_t tick_msr_end(void);
@@ -64,6 +64,9 @@ int hash_generate_test_vectors();
 static uint32_t gb_tick_cnt = 0;
 static uint32_t gb_ms_ticks = 0;
 static const char algo_name_str[128] = ALGO_NAME_STR;
+static uint32_t aead_enc_ticks_res[64];
+static uint32_t aead_dec_ticks_res[64];
+static uint32_t aead_enc_dec_pos = 0;
 
 
 #ifdef ENABLE_ALGO_TEST
@@ -74,6 +77,8 @@ static const char algo_en_dis_str[128] = "Test Disabled";
 
 
 int genkat_benchmark_hash_aead(void) {
+
+	int ret = 0;
 
 	get_memory_usage();
 
@@ -86,13 +91,20 @@ int genkat_benchmark_hash_aead(void) {
 	lwc_printf("Total FLASH: %6luB Total RAM: %6luB \n", mem_stat.tot_flash_usg, mem_stat.tot_ram_usg);
 	lwc_printf("Sections: text %6luB data %6luB bss %6luB\n", mem_stat.text_size, mem_stat.data_size, mem_stat.bss_size);
 
+	memset(aead_enc_ticks_res, 0, sizeof(aead_enc_ticks_res));
+	memset(aead_dec_ticks_res, 0, sizeof(aead_dec_ticks_res));
+
 
 #ifdef LWC_ALGO_AEAD
-	int ret = aead_generate_test_vectors();
+	ret = aead_generate_test_vectors();
+
+	if(ret != KAT_SUCCESS){
+		lwc_printf("TotRes: Error %d", ret);
+	}
 #endif
 
 #ifdef LWC_ALGO_HASH
-	int ret = hash_generate_test_vectors();
+	ret = hash_generate_test_vectors();
 #endif
 
 	return ret;
@@ -118,9 +130,9 @@ int aead_generate_test_vectors() {
 	init_buffer(msg, sizeof(msg));
 	init_buffer(ad, sizeof(ad));
 
+	aead_enc_dec_pos = 0;
 
 	for (unsigned long long mlen = 0; (mlen <= MAX_MESSAGE_LENGTH) && (ret_val == KAT_SUCCESS); mlen += 8) {
-
 		for (unsigned long long adlen = 0; adlen <= MAX_ASSOCIATED_DATA_LENGTH; adlen += 8) {
 
 			lwc_printf("msg_len:%4d ad_len:%4d  ", (int) mlen, (int) adlen);
@@ -134,11 +146,15 @@ int aead_generate_test_vectors() {
 			tick_msr_end();
 
 			lwc_printf("enc:%8lu us:%8lu ms:%8lu   ", gb_tick_cnt, gb_tick_cnt / 16, gb_ms_ticks);
+			aead_enc_ticks_res[aead_enc_dec_pos] = gb_tick_cnt;
 
 			if (func_ret != 0) {
 				ret_val = KAT_CRYPTO_FAILURE;
 				break;
 			}
+
+
+
 
 			tick_msr_start();
 #ifdef ENABLE_ALGO_TEST
@@ -149,6 +165,8 @@ int aead_generate_test_vectors() {
 			tick_msr_end();
 
 			lwc_printf("dec:%8lu us:%8lu ms:%8lu \n", gb_tick_cnt, gb_tick_cnt / 16, gb_ms_ticks);
+			aead_dec_ticks_res[aead_enc_dec_pos] = gb_tick_cnt;
+
 
 #ifdef ENABLE_ALGO_TEST
 			if ((func_ret != 0) || (mlen != mlen2)	|| (memcmp(msg, msg2, mlen) != 0)) {
@@ -157,11 +175,24 @@ int aead_generate_test_vectors() {
 			}
 #endif
 
-		}
-	}
+
+			aead_enc_dec_pos++;
+
+		}//end of foe loop
+	}//end of for loop
 
 	if (ret_val != 0) {
 		lwc_printf("Error occurred\n");
+	}
+
+	aead_enc_dec_pos = 0;
+	lwc_printf("TotRes: ");
+	for (unsigned long long mlen = 0; (mlen <= MAX_MESSAGE_LENGTH);	mlen += 8) {
+		for (unsigned long long adlen = 0; adlen <= MAX_ASSOCIATED_DATA_LENGTH; adlen += 8) {
+			lwc_printf("enc(%d,%d) = %d ", (int)mlen, (int)adlen, (int)aead_enc_ticks_res[aead_enc_dec_pos]);
+			lwc_printf("dec(%d,%d) = %d ", (int)mlen, (int)adlen, (int)aead_dec_ticks_res[aead_enc_dec_pos]);
+			aead_enc_dec_pos++;
+		}
 	}
 
 	return ret_val;
@@ -193,8 +224,9 @@ int hash_generate_test_vectors(){
 #else
 		ret_val = 0;
 #endif
-
 		tick_msr_end();
+
+		aead_enc_ticks_res[aead_enc_dec_pos++] = gb_tick_cnt;
 
 		if(ret_val == 0) {
 			lwc_printf( "hash:%8lu us:%8lu ms:%8lu \n", gb_tick_cnt, gb_tick_cnt/16, gb_ms_ticks);
@@ -206,7 +238,7 @@ int hash_generate_test_vectors(){
 		if(mlen==0){
 			mlen = 4;
 		}
-	}
+	}//end of for loop
 
 	return ret_val;
 }

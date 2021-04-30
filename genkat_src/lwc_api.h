@@ -96,10 +96,189 @@
 
 
 
+#ifdef LWC_ALGO_AEAD_SPIX_128V1
+#include "../algos/spix/Implementations/crypto_aead/spix128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SPIX_128V1"
+#endif
+
+
+#ifdef LWC_ALGO_AEAD_SPOC_128SLISCPLIGHT_256V1
+#include "../algos/spoc/Implementations/crypto_aead/spoc64sliscplight192v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SPOC_128SLISCPLIGHT_256V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SPOC_64SLISCPLIGHT_192V1
+#include "../algos/spoc/Implementations/crypto_aead/spoc128sliscplight256v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SPOC_64SLISCPLIGHT_192V1"
+#endif
+
+
+#ifdef LWC_ALGO_AEAD_SPOOK_128MU_384V1
+#include "../algos/spook/Implementations/crypto_aead/spook128mu384v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SPOOK_128MU_384V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SPOOK_128SU_384V1
+#include "../algos/spook/Implementations/crypto_aead/spook128su384v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SPOOK_128SU_384V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SPOOK_128MU_512V1
+#include "../algos/spook/Implementations/crypto_aead/spook128mu512v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SPOOK_128MU_512V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SPOOK_128SU_512V1
+#include "../algos/spook/Implementations/crypto_aead/spook128su512v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SPOOK_128SU_512V1"
+#endif
+
+
+#ifdef LWC_ALGO_AEAD_SUBTERRANEAN_V1
+#include "../algos/subterranean/Implementations/crypto_aead/subterraneanv1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SUBTERRANEAN_V1"
+#endif
+
+#ifdef LWC_ALGO_HASH_SUBTERRANEAN_V1
+#include "../algos/subterranean/Implementations/crypto_hash/subterraneanv1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_SUBTERRANEAN_V1"
+#endif
+
+
+#ifdef LWC_ALGO_AEAD_GIMLI_GIMLI24V1
+#include "../algos/gimli/Implementations/crypto_aead/gimli24v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_GIMLI_GIMLI24V1"
+#endif
+
+#ifdef LWC_ALGO_HASH_GIMLI_GIMLI24V1
+#include "../algos/gimli/Implementations/crypto_hash/gimli24v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_GIMLI_GIMLI24V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_GRAIN128AEAD
+#include "../algos/grain-128aead/Implementations/crypto_aead/grain128aead/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_GRAIN128AEAD"
+#endif
+
+
+#ifdef LWC_ALGO_AEAD_HYENA_HYENAV1
+#include "../algos/hyena/Implementations/crypto_aead/hyenav1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_HYENA_HYENAV1"
+#endif
+
+
+#ifdef LWC_ALGO_AEAD_ISAP_ISAPA128AV20
+#include "../algos/isap/Implementations/crypto_aead/isapa128av20/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_ISAP_ISAPA128AV20"
+#endif
+
+#ifdef LWC_ALGO_AEAD_ISAP_ISAPA128V20
+#include "../algos/isap/Implementations/crypto_aead/isapa128v20/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_ISAP_ISAPA128V20"
+#endif
+#ifdef LWC_ALGO_AEAD_ISAP_ISAPK128AV20
+#include "../algos/isap/Implementations/crypto_aead/isapk128av20/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_ISAP_ISAPK128AV20"
+#endif
+#ifdef LWC_ALGO_AEAD_ISAP_ISAPK128V20
+#include "../algos/isap/Implementations/crypto_aead/isapk128v20/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_ISAP_ISAPK128V20"
+#endif
+
+
+#ifdef LWC_ALGO_AEAD_KNOT_KNOT128V1
+#include "../algos/knot/Implementations/crypto_aead/knot128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_KNOT_KNOT128V1"
+#endif
+#ifdef LWC_ALGO_AEAD_KNOT_KNOT128V2
+#include "../algos/knot/Implementations/crypto_aead/knot128v2/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_KNOT_KNOT128V2"
+#endif
+#ifdef LWC_ALGO_AEAD_KNOT_KNOT192
+#include "../algos/knot/Implementations/crypto_aead/knot192/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_KNOT_KNOT192"
+#endif
+#ifdef LWC_ALGO_AEAD_KNOT_KNOT256
+#include "../algos/knot/Implementations/crypto_aead/knot256/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_KNOT_KNOT256"
+#endif
+
+
+#ifdef LWC_ALGO_HASH_KNOT_256V1
+#include "../algos/knot/Implementations/crypto_hash/knot256v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_KNOT_256V1"
+#endif
+#ifdef LWC_ALGO_HASH_KNOT_256V2
+#include "../algos/knot/Implementations/crypto_hash/knot256v2/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_KNOT_256V2"
+#endif
+#ifdef LWC_ALGO_HASH_KNOT_384
+#include "../algos/knot/Implementations/crypto_hash/knot384/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_KNOT_384"
+#endif
+#ifdef LWC_ALGO_HASH_KNOT_512
+#include "../algos/knot/Implementations/crypto_hash/knot512/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_KNOT_512"
+#endif
+
+
+#ifdef LWC_ALGO_AEAD_LOTUS_LOCUS_TWEGIFT64LOCUSAEADV1
+#include "../algos/lotus-locus/Implementations/crypto_aead/twegift64locusaeadv1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_LOTUS_LOCUS_TWEGIFT64LOCUSAEADV1"
+#endif
+#ifdef LWC_ALGO_AEAD_LOTUS_LOCUS_TWEGIFT64LOTUSAEADV1
+#include "../algos/lotus-locus/Implementations/crypto_aead/twegift64lotusaeadv1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_LOTUS_LOCUS_TWEGIFT64LOTUSAEADV1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_MIXFEED
+#include "../algos/mixfeed/Implementations/crypto_aead/mixfeed/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_MIXFEED"
+#endif
+
+#ifdef LWC_ALGO_AEAD_ORANGE_ORANGEZESTV1
+#include "../algos/orange/Implementations/crypto_aead/orangezestv1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_ORANGE_ORANGEZESTV1"
+#endif
+#ifdef LWC_ALGO_HASH_ORANGISHV1
+#include "../algos/orange/Implementations/crypto_hash/orangishv1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_ORANGISHV1"
+#endif
 
 
 
 
+#ifdef LWC_ALGO_AEAD_SUNDAEGIFT0V1
+#include "../algos/sundae-gift/Implementations/crypto_aead/sundaegift0v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SUNDAEGIFT0V1"
+#endif
+#ifdef LWC_ALGO_AEAD_SUNDAEGIFT128V1
+#include "../algos/sundae-gift/Implementations/crypto_aead/sundaegift128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SUNDAEGIFT128V1"
+#endif
+#ifdef LWC_ALGO_AEAD_SUNDAEGIFT64V1
+#include "../algos/sundae-gift/Implementations/crypto_aead/sundaegift64v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SUNDAEGIFT64V1"
+#endif
+#ifdef LWC_ALGO_AEAD_SUNDAEGIFT96V1
+#include "../algos/sundae-gift/Implementations/crypto_aead/sundaegift96v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SUNDAEGIFT96V1"
+#endif
+
+
+
+#ifdef LWC_ALGO_AEAD_TINYJAMBU128
+#include "../algos/tinyjambu/Implementations/crypto_aead/tinyjambu128/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_TINYJAMBU128"
+#endif
+#ifdef LWC_ALGO_AEAD_TINYJAMBU192
+#include "../algos/tinyjambu/Implementations/crypto_aead/tinyjambu192/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_TINYJAMBU192"
+#endif
+#ifdef LWC_ALGO_AEAD_TINYJAMBU256
+#include "../algos/tinyjambu/Implementations/crypto_aead/tinyjambu256/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_TINYJAMBU256"
+#endif
 
 
 
@@ -262,6 +441,140 @@
 
 
 
+#ifdef LWC_ALGO_AEAD_SAEAES_SAEAES128A120T128V1
+#include "../algos/saeaes/Implementations/crypto_aead/saeaes128a120t128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SAEAES_SAEAES128A120T128V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SAEAES_SAEAES128A120T64V1
+#include "../algos/saeaes/Implementations/crypto_aead/saeaes128a120t64v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SAEAES_SAEAES128A120T64V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SAEAES_SAEAES128A64T128V1
+#include "../algos/saeaes/Implementations/crypto_aead/saeaes128a64t128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SAEAES_SAEAES128A64T128V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SAEAES_SAEAES128A64T64V1
+#include "../algos/saeaes/Implementations/crypto_aead/saeaes128a64t64v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SAEAES_SAEAES128A64T64V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SAEAES_SAEAES192A120T128V1
+#include "../algos/saeaes/Implementations/crypto_aead/saeaes192a120t128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SAEAES_SAEAES192A120T128V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SAEAES_SAEAES192A64T128V1
+#include "../algos/saeaes/Implementations/crypto_aead/saeaes192a64t128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SAEAES_SAEAES192A64T128V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SAEAES_SAEAES192A64T64V1
+#include "../algos/saeaes/Implementations/crypto_aead/saeaes192a64t64v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SAEAES_SAEAES192A64T64V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SAEAES_SAEAES256A120T128V1
+#include "../algos/saeaes/Implementations/crypto_aead/saeaes256a120t128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SAEAES_SAEAES256A120T128V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SAEAES_SAEAES256A64T128V1
+#include "../algos/saeaes/Implementations/crypto_aead/saeaes256a64t128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SAEAES_SAEAES256A64T128V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SAEAES_SAEAES256A64T64V1
+#include "../algos/saeaes/Implementations/crypto_aead/saeaes256a64t64v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SAEAES_SAEAES256A64T64V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SATURNIN_SATURNINCTRCASCADEV2
+#include "../algos/saturnin/Implementations/crypto_aead/saturninctrcascadev2/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SATURNIN_SATURNINCTRCASCADEV2"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SATURNIN_SATURNINSHORTV2
+#include "../algos/saturnin/Implementations/crypto_aead/saturninshortv2/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SATURNIN_SATURNINSHORTV2"
+#endif
+
+#ifdef LWC_ALGO_HASH_SATURNIN_SATURNINHASHV2
+#include "../algos/saturnin/Implementations/crypto_hash/saturninhashv2/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_SATURNIN_SATURNINHASHV2"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK296128V1
+#include "../algos/skinny/Implementations/crypto_aead/skinnyaeadtk296128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK296128V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK29664V1
+#include "../algos/skinny/Implementations/crypto_aead/skinnyaeadtk29664v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK29664V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK3128128V1
+#include "../algos/skinny/Implementations/crypto_aead/skinnyaeadtk3128128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK3128128V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK312864V1
+#include "../algos/skinny/Implementations/crypto_aead/skinnyaeadtk312864v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK312864V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK396128V1
+#include "../algos/skinny/Implementations/crypto_aead/skinnyaeadtk396128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK396128V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK39664V1
+#include "../algos/skinny/Implementations/crypto_aead/skinnyaeadtk39664v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK39664V1"
+#endif
+
+#ifdef LWC_ALGO_HASH_SKINNY_SKINNYHASHTK2
+#include "../algos/skinny/Implementations/crypto_hash/skinnyhashtk2/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_SKINNY_SKINNYHASHTK2"
+#endif
+
+#ifdef LWC_ALGO_HASH_SKINNY_SKINNYHASHTK3
+#include "../algos/skinny/Implementations/crypto_hash/skinnyhashtk3/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_SKINNY_SKINNYHASHTK3"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SPARKLE_SCHWAEMM128128V1
+#include "../algos/sparkle/Implementations/crypto_aead/schwaemm128128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SPARKLE_SCHWAEMM128128V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SPARKLE_SCHWAEMM192192V1
+#include "../algos/sparkle/Implementations/crypto_aead/schwaemm192192v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SPARKLE_SCHWAEMM192192V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SPARKLE_SCHWAEMM256128V1
+#include "../algos/sparkle/Implementations/crypto_aead/schwaemm256128v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SPARKLE_SCHWAEMM256128V1"
+#endif
+
+#ifdef LWC_ALGO_AEAD_SPARKLE_SCHWAEMM256256V1
+#include "../algos/sparkle/Implementations/crypto_aead/schwaemm256256v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AEAD_SPARKLE_SCHWAEMM256256V1"
+#endif
+
+#ifdef LWC_ALGO_HASH_SPARKLE_ESCH256V1
+#include "../algos/sparkle/Implementations/crypto_hash/esch256v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_SPARKLE_ESCH256V1"
+#endif
+
+#ifdef LWC_ALGO_HASH_SPARKLE_ESCH384V1
+#include "../algos/sparkle/Implementations/crypto_hash/esch384v1/ref/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_SPARKLE_ESCH384V1"
+#endif
 
 
 

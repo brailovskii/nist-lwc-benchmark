@@ -1,5 +1,5 @@
 #include "mem_stat.h"
-
+#include "string.h"
 
 
 struct mem_usage_stat mem_stat;

@@ -1,0 +1,14 @@
+#ifndef INC_LWC_CONFIG_H_
+#define INC_LWC_CONFIG_H_
+
+#define OPTIMIZATION_LEVEL	 "O0"
+#pragma GCC optimize ("O0")
+
+#define ENABLE_ALGO_TEST
+#define LWC_ALGO_AEAD
+
+#ifdef LWC_ALGO_AEAD
+#define  LWC_ALGO_ACE_128v1
+#endif
+
+#endif
