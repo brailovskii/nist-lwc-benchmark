@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "lwc_config.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

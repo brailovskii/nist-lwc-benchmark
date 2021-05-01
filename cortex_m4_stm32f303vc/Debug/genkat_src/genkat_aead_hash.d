@@ -4,7 +4,7 @@ genkat_src/genkat_aead_hash.o: \
  C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/crypto_hash.h \
  C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_config.h \
  C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_api.h \
- c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\drygascon\implementations\crypto_hash\drygascon256\ref\api.h \
+ c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\sparkle\implementations\crypto_hash\esch384v1\ref\api.h \
  C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/mem_stat.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h \
  ../Core/Inc/stm32f3xx_hal_conf.h \
@@ -45,7 +45,7 @@ C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/l
 
 C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_api.h:
 
-c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\drygascon\implementations\crypto_hash\drygascon256\ref\api.h:
+c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\sparkle\implementations\crypto_hash\esch384v1\ref\api.h:
 
 C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/mem_stat.h:
 

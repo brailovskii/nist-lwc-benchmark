@@ -1,0 +1,5 @@
+algos/isap/Implementations/crypto_aead/isapa128av20/ref/Ascon-reference.o: \
+ C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/algos/isap/Implementations/crypto_aead/isapa128av20/ref/Ascon-reference.c \
+ ../../genkat_src/lwc_config.h
+
+../../genkat_src/lwc_config.h:

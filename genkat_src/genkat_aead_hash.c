@@ -284,6 +284,15 @@ void init_buffer(unsigned char *buffer, unsigned long long numbytes) {
 #ifdef STM32F051x8
 #include "stm32f0xx_hal.h"
 #endif
+#ifdef STM32L053xx
+#include "stm32l0xx_hal.h"
+#endif
+#ifdef STM32F100xB
+#include "stm32f1xx_hal.h"
+#endif
+#ifdef STM32L476xx
+#include "stm32l4xx_hal.h"
+#endif
 
 uint32_t tim_per_elp_cnt = 0;
 extern TIM_HandleTypeDef htim6;
