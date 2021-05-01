@@ -229,7 +229,7 @@ int hash_generate_test_vectors(){
 		aead_enc_ticks_res[aead_enc_dec_pos++] = gb_tick_cnt;
 
 		if(ret_val == 0) {
-			lwc_printf( "hash:%8lu us:%8lu ms:%8lu \n", gb_tick_cnt, gb_tick_cnt/16, gb_ms_ticks);
+			lwc_printf( "hash:%10d us:%9d ms:%7d \n", (int)gb_tick_cnt, (int)gb_tick_cnt/16, (int)gb_ms_ticks);
 		}else{
 			ret_val = KAT_CRYPTO_FAILURE;
 			break;

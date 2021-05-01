@@ -1,5 +1,6 @@
 import os
 import time
+import sys
 
 cfg_fn = "../genkat_src/lwc_config.h"
 aead_algos_list = []
@@ -57,7 +58,7 @@ def get_algos_list(header_cfg):
         if hash_list_started == 1:
             if line.find("#define LWC_ALGO") != -1:
                 if line.find("//#define") != -1:
-                    line = line.replace("//#define", "#define")
+                    line = line.replace("//#define ", "#define")
                 
                 line = line.replace("#define", "")
                 hash_algos_list.append(line)
@@ -87,6 +88,7 @@ def write_aead_header_file(opt_lvl, aead_algo, algo_type):
 
 
 
+
 print("Testing all configurations")
 
 # Read header file with configurations
@@ -111,21 +113,21 @@ start_time_aead = time.time()
 
 
 for algo in aead_algos_list[0:]:
-    for opt_lvl in opt_lvl_list[0:]:
+    for opt_lvl in opt_lvl_list[0:1]:
         write_aead_header_file(opt_lvl, algo, "LWC_ALGO_AEAD")
         print("**** Compiling AEAD " + algo + " " + opt_lvl, end = " " )
         print( len(opt_lvl_list)*aead_algos_list.index(algo) + opt_lvl_list.index(opt_lvl), " of ", len(aead_algos_list)*len(opt_lvl_list) , end = " ")
         print("Seconds passed: ", time.time() - start_time_aead)
         build_config()
         print("**** Uploading Code...")
-        upload_code()
+        #upload_code()
         print("**** Sleeping 30 seconds, algorithm works on MCU")
-        time.sleep(30)
+        #time.sleep(30)
     
 
  
 for algo in hash_algos_list[0:]:
-    for opt_lvl in opt_lvl_list[0:]:
+    for opt_lvl in opt_lvl_list[0:1]:
         write_aead_header_file(opt_lvl, algo, "LWC_ALGO_HASH")
         print("**** Compiling HASH %32s %8s" %(algo, opt_lvl), end = " " )
         print( "%4s of%4s " %(len(opt_lvl_list)*hash_algos_list.index(algo) + opt_lvl_list.index(opt_lvl), len(hash_algos_list)*len(opt_lvl_list)) , end = " ")
