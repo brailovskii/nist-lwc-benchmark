@@ -20,10 +20,13 @@ def build_config():
     for line in output:
         if line.find("make -j12 all") != -1:
             build_log_started = True
-    
+    #11 10
         if build_log_started:
             if line.find("Build Finished. ") != -1:
-                print("\t" + line)
+                print("\t" + line) #build finished with X errors and X warnings line
+                print("\t" + output[ output.index(line) - 11 ]) # text bss sections
+                print("\t" + output[ output.index(line) - 10 ]) # text bss section size
+
 
 def upload_code():
     fh = os.popen("flash_mcu.bat")
@@ -32,19 +35,19 @@ def upload_code():
     fh.close()
 
 def get_algos_list(header_cfg):
-    aead_list_started = 0
-    hash_list_started = 0
+    aead_list_started = False
+    hash_list_started = False
     for line in header_cfg:
         #print("Line: ", line)
         if line.find("#ifdef LWC_ALGO_AEAD") != -1:
-            aead_list_started = 1
+            aead_list_started = True
             continue
 
         if line.find("#ifdef LWC_ALGO_HASH") != -1:
-            hash_list_started = 1
+            hash_list_started = True
             continue
         
-        if aead_list_started == 1:
+        if aead_list_started:
             if line.find("#define LWC_ALGO") != -1:
                 if line.find("//#define") != -1:
                     line = line.replace("//#define", "#define")
@@ -53,18 +56,18 @@ def get_algos_list(header_cfg):
                 aead_algos_list.append(line)
             
             if line.find("#endif") != -1:
-                aead_list_started = 0
+                aead_list_started = False
                 
-        if hash_list_started == 1:
+        if hash_list_started:
             if line.find("#define LWC_ALGO") != -1:
                 if line.find("//#define") != -1:
-                    line = line.replace("//#define ", "#define")
+                    line = line.replace("//#define", "#define")
                 
-                line = line.replace("#define", "")
+                line = line.replace("#define ", "")
                 hash_algos_list.append(line)
             
             if line.find("#endif") != -1:
-                hash_list_started = 0
+                hash_list_started = False
                     
 
     print("\nAEAD list:\n\n")
@@ -111,7 +114,7 @@ print("\n\nNow compiling starts\n\n")
 
 start_time_aead = time.time()
 
-
+'''
 for algo in aead_algos_list[0:]:
     for opt_lvl in opt_lvl_list[0:1]:
         write_aead_header_file(opt_lvl, algo, "LWC_ALGO_AEAD")
@@ -124,9 +127,9 @@ for algo in aead_algos_list[0:]:
         print("**** Sleeping 30 seconds, algorithm works on MCU")
         #time.sleep(30)
     
-
+'''
  
-for algo in hash_algos_list[0:]:
+for algo in hash_algos_list[0:1]:
     for opt_lvl in opt_lvl_list[0:1]:
         write_aead_header_file(opt_lvl, algo, "LWC_ALGO_HASH")
         print("**** Compiling HASH %32s %8s" %(algo, opt_lvl), end = " " )
