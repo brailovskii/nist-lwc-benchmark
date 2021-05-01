@@ -9,10 +9,17 @@ hash_algos_list = []
 opt_lvl_list = [ "O0", "O1", "O2", "O3", "Os", "Ofast" ]
 
 
+def printLog(*args, **kwargs):
+    print(*args, **kwargs)
+    with open('script_log.txt','a') as file:
+        print(*args, **kwargs, file=file)
+
+
+
 def build_config():
     fh = os.popen("build.bat")
     output = fh.read()
-    #print ("This is the output of test.bat:", output)
+    #printLog ("This is the output of test.bat:", output)
     fh.close()
     
     output = output.splitlines()
@@ -20,25 +27,25 @@ def build_config():
     for line in output:
         if line.find("make -j12 all") != -1:
             build_log_started = True
-    #11 10
+
         if build_log_started:
             if line.find("Build Finished. ") != -1:
-                print("\t" + line) #build finished with X errors and X warnings line
-                print("\t" + output[ output.index(line) - 11 ]) # text bss sections
-                print("\t" + output[ output.index(line) - 10 ]) # text bss section size
+                printLog("\t" + line) #build finished with X errors and X warnings line
+                printLog("\t" + output[ output.index(line) - 11 ]) # text bss sections
+                printLog("\t" + output[ output.index(line) - 10 ]) # text bss section size
 
 
 def upload_code():
     fh = os.popen("flash_mcu.bat")
     output = fh.read()
-    #print ("This is the output of test.bat:", output)
+    #printLog ("This is the output of test.bat:", output)
     fh.close()
 
 def get_algos_list(header_cfg):
     aead_list_started = False
     hash_list_started = False
     for line in header_cfg:
-        #print("Line: ", line)
+        #printLog("Line: ", line)
         if line.find("#ifdef LWC_ALGO_AEAD") != -1:
             aead_list_started = True
             continue
@@ -70,14 +77,13 @@ def get_algos_list(header_cfg):
                 hash_list_started = False
                     
 
-    print("\nAEAD list:\n\n")
+    printLog("\nAEAD list:\n\n")
     for aead_algo in aead_algos_list:
-        print(aead_algo)
+        printLog(aead_algo)
 
-    print("\nHASH list:\n\n")
+    printLog("\nHASH list:\n\n")
     for hash_algo in hash_algos_list:
-        print(hash_algo)
-
+        printLog(hash_algo)
 
 
 def write_aead_header_file(opt_lvl, aead_algo, algo_type):
@@ -91,8 +97,7 @@ def write_aead_header_file(opt_lvl, aead_algo, algo_type):
 
 
 
-
-print("Testing all configurations")
+printLog("Testing all configurations")
 
 # Read header file with configurations
 f = open(cfg_fn, 'r')
@@ -106,35 +111,33 @@ f = open(cfg_fn+".bckup", 'w')
 f.write(header_cfg)
 f.close()
 
-
 get_algos_list(lines)
 
-
-print("\n\nNow compiling starts\n\n")
+printLog("\n\nNow compiling starts\n\n")
 
 start_time_aead = time.time()
 
-'''
-for algo in aead_algos_list[0:]:
+
+for algo in aead_algos_list[0:1]:
     for opt_lvl in opt_lvl_list[0:1]:
         write_aead_header_file(opt_lvl, algo, "LWC_ALGO_AEAD")
-        print("**** Compiling AEAD " + algo + " " + opt_lvl, end = " " )
-        print( len(opt_lvl_list)*aead_algos_list.index(algo) + opt_lvl_list.index(opt_lvl), " of ", len(aead_algos_list)*len(opt_lvl_list) , end = " ")
-        print("Seconds passed: ", time.time() - start_time_aead)
+        printLog("**** Compiling AEAD " + algo + " " + opt_lvl, end = " " )
+        printLog( len(opt_lvl_list)*aead_algos_list.index(algo) + opt_lvl_list.index(opt_lvl), " of ", len(aead_algos_list)*len(opt_lvl_list) , end = " ")
+        printLog("Seconds passed: ", time.time() - start_time_aead)
         build_config()
-        print("**** Uploading Code...")
+        printLog("**** Uploading Code...")
         #upload_code()
-        print("**** Sleeping 30 seconds, algorithm works on MCU")
-        #time.sleep(30)
+        printLog("**** Sleeping 15 seconds, algorithm works on MCU")
+        #time.sleep(15)
     
-'''
+
  
 for algo in hash_algos_list[0:1]:
     for opt_lvl in opt_lvl_list[0:1]:
         write_aead_header_file(opt_lvl, algo, "LWC_ALGO_HASH")
-        print("**** Compiling HASH %32s %8s" %(algo, opt_lvl), end = " " )
-        print( "%4s of%4s " %(len(opt_lvl_list)*hash_algos_list.index(algo) + opt_lvl_list.index(opt_lvl), len(hash_algos_list)*len(opt_lvl_list)) , end = " ")
-        print("Seconds passed: ", time.time() - start_time_aead)
+        printLog("**** Compiling HASH %32s %8s" %(algo, opt_lvl), end = " " )
+        printLog( "%4s of%4s " %(len(opt_lvl_list)*hash_algos_list.index(algo) + opt_lvl_list.index(opt_lvl), len(hash_algos_list)*len(opt_lvl_list)) , end = " ")
+        printLog("Seconds passed: ", time.time() - start_time_aead)
         build_config()
         
 
@@ -144,4 +147,5 @@ f = open(cfg_fn, 'w')
 f.write(header_cfg)
 f.close()
 
+printLog("Compilation finished")
 wait_for_keyboard = input("Exiting")

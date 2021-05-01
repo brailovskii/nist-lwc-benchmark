@@ -58,7 +58,7 @@ void lwc_printf(const char *format, ...);
 void init_buffer(unsigned char *buffer, unsigned long long numbytes);
 int aead_generate_test_vectors();
 int hash_generate_test_vectors();
-
+void aead_hash_print_res(char *algo_type);
 
 
 static uint32_t gb_tick_cnt = 0;
@@ -66,7 +66,8 @@ static uint32_t gb_ms_ticks = 0;
 static const char algo_name_str[128] = ALGO_NAME_STR;
 static uint32_t aead_enc_ticks_res[64];
 static uint32_t aead_dec_ticks_res[64];
-static uint32_t aead_enc_dec_pos = 0;
+static uint32_t hash_ticks_res[64];
+static uint32_t ticks_res_pos = 0;
 
 
 #ifdef ENABLE_ALGO_TEST
@@ -93,6 +94,8 @@ int genkat_benchmark_hash_aead(void) {
 
 	memset(aead_enc_ticks_res, 0, sizeof(aead_enc_ticks_res));
 	memset(aead_dec_ticks_res, 0, sizeof(aead_dec_ticks_res));
+	memset(hash_ticks_res,     0, sizeof(hash_ticks_res));
+
 
 
 #ifdef LWC_ALGO_AEAD
@@ -130,7 +133,7 @@ int aead_generate_test_vectors() {
 	init_buffer(msg, sizeof(msg));
 	init_buffer(ad, sizeof(ad));
 
-	aead_enc_dec_pos = 0;
+	ticks_res_pos = 0;
 
 	for (unsigned long long mlen = 0; (mlen <= MAX_MESSAGE_LENGTH) && (ret_val == KAT_SUCCESS); mlen += 8) {
 		for (unsigned long long adlen = 0; adlen <= MAX_ASSOCIATED_DATA_LENGTH; adlen += 8) {
@@ -146,7 +149,7 @@ int aead_generate_test_vectors() {
 			tick_msr_end();
 
 			lwc_printf("enc:%8lu us:%8lu ms:%8lu   ", gb_tick_cnt, gb_tick_cnt / 16, gb_ms_ticks);
-			aead_enc_ticks_res[aead_enc_dec_pos] = gb_tick_cnt;
+			aead_enc_ticks_res[ticks_res_pos] = gb_tick_cnt;
 
 			if (func_ret != 0) {
 				ret_val = KAT_CRYPTO_FAILURE;
@@ -165,7 +168,7 @@ int aead_generate_test_vectors() {
 			tick_msr_end();
 
 			lwc_printf("dec:%8lu us:%8lu ms:%8lu \n", gb_tick_cnt, gb_tick_cnt / 16, gb_ms_ticks);
-			aead_dec_ticks_res[aead_enc_dec_pos] = gb_tick_cnt;
+			aead_dec_ticks_res[ticks_res_pos] = gb_tick_cnt;
 
 
 #ifdef ENABLE_ALGO_TEST
@@ -176,7 +179,7 @@ int aead_generate_test_vectors() {
 #endif
 
 
-			aead_enc_dec_pos++;
+			ticks_res_pos++;
 
 		}//end of foe loop
 	}//end of for loop
@@ -185,13 +188,15 @@ int aead_generate_test_vectors() {
 		lwc_printf("Error occurred\n");
 	}
 
-	aead_enc_dec_pos = 0;
-	lwc_printf("TotRes: ");
+	/* Now print Results in one single line for easier file processing*/
+	ticks_res_pos = 0;
+	aead_hash_print_res("AEAD");
+	lwc_printf("AEADTotRes: ");
 	for (unsigned long long mlen = 0; (mlen <= MAX_MESSAGE_LENGTH);	mlen += 8) {
 		for (unsigned long long adlen = 0; adlen <= MAX_ASSOCIATED_DATA_LENGTH; adlen += 8) {
-			lwc_printf("enc(%d,%d) = %d ", (int)mlen, (int)adlen, (int)aead_enc_ticks_res[aead_enc_dec_pos]);
-			lwc_printf("dec(%d,%d) = %d ", (int)mlen, (int)adlen, (int)aead_dec_ticks_res[aead_enc_dec_pos]);
-			aead_enc_dec_pos++;
+			lwc_printf("enc(%d,%d) = %d ", (int)mlen, (int)adlen, (int)aead_enc_ticks_res[ticks_res_pos]);
+			lwc_printf("dec(%d,%d) = %d ", (int)mlen, (int)adlen, (int)aead_dec_ticks_res[ticks_res_pos]);
+			ticks_res_pos++;
 		}
 	}
 
@@ -199,20 +204,21 @@ int aead_generate_test_vectors() {
 }
 #endif
 
+
+
+
+
 #ifdef LWC_ALGO_HASH
 
 #define MAX_MESSAGE_LENGTH			1024
 
-
 int hash_generate_test_vectors(){
-
 
 	unsigned char       msg[MAX_MESSAGE_LENGTH];
 	unsigned char		digest[CRYPTO_BYTES];
 	int                 ret_val = KAT_SUCCESS;
 
 	init_buffer(msg, sizeof(msg));
-
 
 	for (unsigned long long mlen = 0; mlen <= MAX_MESSAGE_LENGTH; mlen *= 2) {
 
@@ -226,7 +232,7 @@ int hash_generate_test_vectors(){
 #endif
 		tick_msr_end();
 
-		aead_enc_ticks_res[aead_enc_dec_pos++] = gb_tick_cnt;
+		hash_ticks_res[ticks_res_pos++] = gb_tick_cnt;
 
 		if(ret_val == 0) {
 			lwc_printf( "hash:%10d us:%9d ms:%7d \n", (int)gb_tick_cnt, (int)gb_tick_cnt/16, (int)gb_ms_ticks);
@@ -240,10 +246,28 @@ int hash_generate_test_vectors(){
 		}
 	}//end of for loop
 
+
+	ticks_res_pos = 0;
+	aead_hash_print_res("HASH");
+	lwc_printf("HASHTotRes: ");
+	for (unsigned long long mlen = 0; mlen <= MAX_MESSAGE_LENGTH; mlen *= 2) {
+
+		lwc_printf("h(%d) = %d ", (int)mlen, (int)hash_ticks_res[ticks_res_pos++]);
+
+		if(mlen==0){
+			mlen = 4;
+		}
+	}
+
 	return ret_val;
 }
 
 #endif
+
+void aead_hash_print_res(char *algo_type){
+	lwc_printf("%s %s "__DATE__" "__TIME__" Optimization: "OPTIMIZATION_LEVEL" Algorithm: %s ", algo_type, algo_en_dis_str, algo_name_str);
+	lwc_printf("Sections: text %6lu data %6lu bss %6lu ", mem_stat.text_size, mem_stat.data_size, mem_stat.bss_size);
+}
 
 void init_buffer(unsigned char *buffer, unsigned long long numbytes) {
 	for (unsigned long long i = 0; i < numbytes; i++) {
