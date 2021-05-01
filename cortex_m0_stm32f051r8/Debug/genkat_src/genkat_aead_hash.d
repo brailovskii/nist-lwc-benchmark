@@ -1,11 +1,11 @@
 genkat_src/genkat_aead_hash.o: \
- C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/genkat_aead_hash.c \
- C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/crypto_aead.h \
- C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/crypto_hash.h \
- C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_config.h \
- C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_api.h \
- c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\xoodyak\implementations\crypto_hash\xoodyakv1\ref\api.h \
- C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/mem_stat.h \
+ C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/genkat_aead_hash.c \
+ C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/crypto_aead.h \
+ C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/crypto_hash.h \
+ C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_config.h \
+ C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_api.h \
+ c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\ace\implementations\crypto_hash\acehash256v1\ref\api.h \
+ C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/mem_stat.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
  ../Core/Inc/stm32f0xx_hal_conf.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h \
@@ -36,17 +36,17 @@ genkat_src/genkat_aead_hash.o: \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
 
-C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/crypto_aead.h:
+C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/crypto_aead.h:
 
-C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/crypto_hash.h:
+C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/crypto_hash.h:
 
-C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_config.h:
+C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_config.h:
 
-C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_api.h:
+C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/lwc_api.h:
 
-c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\xoodyak\implementations\crypto_hash\xoodyakv1\ref\api.h:
+c:\users\vasilii\desktop\md_lessons\data_net_sec\nist_lwc_benchmark\algos\ace\implementations\crypto_hash\acehash256v1\ref\api.h:
 
-C:/Users/Vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/mem_stat.h:
+C:/Users/vasilii/Desktop/md_lessons/data_net_sec/nist_lwc_benchmark/genkat_src/mem_stat.h:
 
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:
 

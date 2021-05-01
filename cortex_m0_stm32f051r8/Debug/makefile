@@ -13,6 +13,49 @@ RM := rm -rf
 -include algos/xoodyak/Implementations/crypto_hash/xoodyakv1/ref/subdir.mk
 -include algos/xoodyak/Implementations/crypto_aead/xoodyakv1/ref/subdir.mk
 -include algos/wage/Implementations/crypto_aead/wageae128v1/ref/subdir.mk
+-include algos/tinyjambu/Implementations/crypto_aead/tinyjambu256/ref/subdir.mk
+-include algos/tinyjambu/Implementations/crypto_aead/tinyjambu192/ref/subdir.mk
+-include algos/tinyjambu/Implementations/crypto_aead/tinyjambu128/ref/subdir.mk
+-include algos/sundae-gift/Implementations/crypto_aead/sundaegift96v1/ref/subdir.mk
+-include algos/sundae-gift/Implementations/crypto_aead/sundaegift64v1/ref/subdir.mk
+-include algos/sundae-gift/Implementations/crypto_aead/sundaegift128v1/ref/subdir.mk
+-include algos/sundae-gift/Implementations/crypto_aead/sundaegift0v1/ref/subdir.mk
+-include algos/subterranean/Implementations/crypto_hash/subterraneanv1/ref/subdir.mk
+-include algos/subterranean/Implementations/crypto_aead/subterraneanv1/ref/subdir.mk
+-include algos/spook/Implementations/crypto_aead/spook128su512v1/ref/subdir.mk
+-include algos/spook/Implementations/crypto_aead/spook128su384v1/ref/subdir.mk
+-include algos/spook/Implementations/crypto_aead/spook128mu512v1/ref/subdir.mk
+-include algos/spook/Implementations/crypto_aead/spook128mu384v1/ref/subdir.mk
+-include algos/spoc/Implementations/crypto_aead/spoc64sliscplight192v1/ref/subdir.mk
+-include algos/spoc/Implementations/crypto_aead/spoc128sliscplight256v1/ref/subdir.mk
+-include algos/spix/Implementations/crypto_aead/spix128v1/ref/subdir.mk
+-include algos/sparkle/Implementations/crypto_hash/esch384v1/ref/subdir.mk
+-include algos/sparkle/Implementations/crypto_hash/esch256v1/ref/subdir.mk
+-include algos/sparkle/Implementations/crypto_aead/schwaemm256256v1/ref/subdir.mk
+-include algos/sparkle/Implementations/crypto_aead/schwaemm256128v1/ref/subdir.mk
+-include algos/sparkle/Implementations/crypto_aead/schwaemm192192v1/ref/subdir.mk
+-include algos/sparkle/Implementations/crypto_aead/schwaemm128128v1/ref/subdir.mk
+-include algos/skinny/Implementations/crypto_hash/skinnyhashtk3/ref/subdir.mk
+-include algos/skinny/Implementations/crypto_hash/skinnyhashtk2/ref/subdir.mk
+-include algos/skinny/Implementations/crypto_aead/skinnyaeadtk39664v1/ref/subdir.mk
+-include algos/skinny/Implementations/crypto_aead/skinnyaeadtk396128v1/ref/subdir.mk
+-include algos/skinny/Implementations/crypto_aead/skinnyaeadtk312864v1/ref/subdir.mk
+-include algos/skinny/Implementations/crypto_aead/skinnyaeadtk3128128v1/ref/subdir.mk
+-include algos/skinny/Implementations/crypto_aead/skinnyaeadtk29664v1/ref/subdir.mk
+-include algos/skinny/Implementations/crypto_aead/skinnyaeadtk296128v1/ref/subdir.mk
+-include algos/saturnin/Implementations/crypto_hash/saturninhashv2/ref/subdir.mk
+-include algos/saturnin/Implementations/crypto_aead/saturninshortv2/ref/subdir.mk
+-include algos/saturnin/Implementations/crypto_aead/saturninctrcascadev2/ref/subdir.mk
+-include algos/saeaes/Implementations/crypto_aead/saeaes256a64t64v1/ref/subdir.mk
+-include algos/saeaes/Implementations/crypto_aead/saeaes256a64t128v1/ref/subdir.mk
+-include algos/saeaes/Implementations/crypto_aead/saeaes256a120t128v1/ref/subdir.mk
+-include algos/saeaes/Implementations/crypto_aead/saeaes192a64t64v1/ref/subdir.mk
+-include algos/saeaes/Implementations/crypto_aead/saeaes192a64t128v1/ref/subdir.mk
+-include algos/saeaes/Implementations/crypto_aead/saeaes192a120t128v1/ref/subdir.mk
+-include algos/saeaes/Implementations/crypto_aead/saeaes128a64t64v1/ref/subdir.mk
+-include algos/saeaes/Implementations/crypto_aead/saeaes128a64t128v1/ref/subdir.mk
+-include algos/saeaes/Implementations/crypto_aead/saeaes128a120t64v1/ref/subdir.mk
+-include algos/saeaes/Implementations/crypto_aead/saeaes128a120t128v1/ref/subdir.mk
 -include algos/romulus/Implementations/crypto_aead/romulusn3v12/ref/subdir.mk
 -include algos/romulus/Implementations/crypto_aead/romulusn2v12/ref/subdir.mk
 -include algos/romulus/Implementations/crypto_aead/romulusn1v12/ref/subdir.mk
@@ -26,6 +69,27 @@ RM := rm -rf
 -include algos/photon-beetle/photon-beetle/Implementations/crypto_aead/photonbeetleaead128rate128v1/ref/subdir.mk
 -include algos/oribatida/Implementations/crypto_aead/oribatida256v12/ref/subdir.mk
 -include algos/oribatida/Implementations/crypto_aead/oribatida192v12/ref/subdir.mk
+-include algos/orange/Implementations/crypto_hash/orangishv1/ref/subdir.mk
+-include algos/orange/Implementations/crypto_aead/orangezestv1/ref/subdir.mk
+-include algos/mixfeed/Implementations/crypto_aead/mixfeed/ref/subdir.mk
+-include algos/lotus-locus/Implementations/crypto_aead/twegift64lotusaeadv1/ref/subdir.mk
+-include algos/lotus-locus/Implementations/crypto_aead/twegift64locusaeadv1/ref/subdir.mk
+-include algos/knot/Implementations/crypto_hash/knot512/ref/subdir.mk
+-include algos/knot/Implementations/crypto_hash/knot384/ref/subdir.mk
+-include algos/knot/Implementations/crypto_hash/knot256v2/ref/subdir.mk
+-include algos/knot/Implementations/crypto_hash/knot256v1/ref/subdir.mk
+-include algos/knot/Implementations/crypto_aead/knot256/ref/subdir.mk
+-include algos/knot/Implementations/crypto_aead/knot192/ref/subdir.mk
+-include algos/knot/Implementations/crypto_aead/knot128v2/ref/subdir.mk
+-include algos/knot/Implementations/crypto_aead/knot128v1/ref/subdir.mk
+-include algos/isap/Implementations/crypto_aead/isapk128v20/ref/subdir.mk
+-include algos/isap/Implementations/crypto_aead/isapk128av20/ref/subdir.mk
+-include algos/isap/Implementations/crypto_aead/isapa128v20/ref/subdir.mk
+-include algos/isap/Implementations/crypto_aead/isapa128av20/ref/subdir.mk
+-include algos/hyena/Implementations/crypto_aead/hyenav1/ref/subdir.mk
+-include algos/grain-128aead/Implementations/crypto_aead/grain128aead/ref/subdir.mk
+-include algos/gimli/Implementations/crypto_hash/gimli24v1/ref/subdir.mk
+-include algos/gimli/Implementations/crypto_aead/gimli24v1/ref/subdir.mk
 -include algos/gift-cofb/Implementations/crypto_aead/giftcofb128v1/ref/subdir.mk
 -include algos/forkae/Implementations/crypto_aead/saefforkskinnyb128t256n120v1/ref/subdir.mk
 -include algos/forkae/Implementations/crypto_aead/saefforkskinnyb128t192n56v1/ref/subdir.mk
@@ -109,8 +173,8 @@ all: main-build
 main-build: lwc_nist_benchmark_stm32f051r8.elf secondary-outputs
 
 # Tool invocations
-lwc_nist_benchmark_stm32f051r8.elf: $(OBJS) $(USER_OBJS) C:\Users\Vasilii\Desktop\md_lessons\data_net_sec\nist_lwc_benchmark\cortex_m0_stm32f051r8\STM32F051R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "lwc_nist_benchmark_stm32f051r8.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\Vasilii\Desktop\md_lessons\data_net_sec\nist_lwc_benchmark\cortex_m0_stm32f051r8\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lwc_nist_benchmark_stm32f051r8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+lwc_nist_benchmark_stm32f051r8.elf: $(OBJS) $(USER_OBJS) C:\Users\vasilii\Desktop\md_lessons\data_net_sec\nist_lwc_benchmark\cortex_m0_stm32f051r8\STM32F051R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "lwc_nist_benchmark_stm32f051r8.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\vasilii\Desktop\md_lessons\data_net_sec\nist_lwc_benchmark\cortex_m0_stm32f051r8\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lwc_nist_benchmark_stm32f051r8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
