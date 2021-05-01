@@ -14,8 +14,8 @@
 
 #define ENABLE_ALGO_TEST
 
-#define LWC_ALGO_AEAD
-//#define LWC_ALGO_HASH
+//#define LWC_ALGO_AEAD
+#define LWC_ALGO_HASH
 
 #ifdef LWC_ALGO_AEAD
 

@@ -118,27 +118,31 @@ printLog("\n\nNow compiling starts\n\n")
 start_time_aead = time.time()
 
 
-for algo in aead_algos_list[0:1]:
-    for opt_lvl in opt_lvl_list[0:1]:
+for algo in aead_algos_list[0:5]:
+    for opt_lvl in opt_lvl_list[0:]:
         write_aead_header_file(opt_lvl, algo, "LWC_ALGO_AEAD")
         printLog("**** Compiling AEAD " + algo + " " + opt_lvl, end = " " )
         printLog( len(opt_lvl_list)*aead_algos_list.index(algo) + opt_lvl_list.index(opt_lvl), " of ", len(aead_algos_list)*len(opt_lvl_list) , end = " ")
         printLog("Seconds passed: ", time.time() - start_time_aead)
         build_config()
         printLog("**** Uploading Code...")
-        #upload_code()
+        upload_code()
         printLog("**** Sleeping 15 seconds, algorithm works on MCU")
-        #time.sleep(15)
+        time.sleep(15)
     
 
  
-for algo in hash_algos_list[0:1]:
-    for opt_lvl in opt_lvl_list[0:1]:
+for algo in hash_algos_list[0:5]:
+    for opt_lvl in opt_lvl_list[0:]:
         write_aead_header_file(opt_lvl, algo, "LWC_ALGO_HASH")
         printLog("**** Compiling HASH %32s %8s" %(algo, opt_lvl), end = " " )
         printLog( "%4s of%4s " %(len(opt_lvl_list)*hash_algos_list.index(algo) + opt_lvl_list.index(opt_lvl), len(hash_algos_list)*len(opt_lvl_list)) , end = " ")
         printLog("Seconds passed: ", time.time() - start_time_aead)
         build_config()
+        printLog("**** Uploading Code...")
+        upload_code()
+        printLog("**** Sleeping 15 seconds, algorithm works on MCU")
+        time.sleep(15)
         
 
 

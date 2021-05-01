@@ -120,134 +120,364 @@ LWC_ALGO_HASH_XOODYAKV1
 Now compiling starts
 
 
-**** Compiling AEAD LWC_ALGO_ACE_128v1 O0 0  of  534 Seconds passed:  0.0009984970092773438
+**** Compiling AEAD LWC_ALGO_ACE_128v1 O0 0  of  534 Seconds passed:  0.0
+	12:12:01 Build Finished. 0 errors, 0 warnings. (took 4s.627ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  23916	    120	   3152	  27188	   6a34	lwc_nist_benchmark_stm32f303vc.elf
 **** Uploading Code...
 **** Sleeping 15 seconds, algorithm works on MCU
-**** Compiling HASH       LWC_ALGO_HASH_ACEHASH256v1       O0    0 of 114  Seconds passed:  10.266791820526123
-Testing all configurations
-
-AEAD list:
-
-
-LWC_ALGO_ACE_128v1
-LWC_ALGO_ASCON_128av12
-LWC_ALGO_ASCON_128v12
-LWC_ALGO_ASCON_80pqv12
-LWC_ALGO_COMET_128aesv1
-LWC_ALGO_COMET_128chamv1
-LWC_ALGO_COMET_64chamv1
-LWC_ALGO_COMET_64speckv1
-LWC_ALGO_DRYGASCON_128
-LWC_ALGO_DRYGASCON_256
-LWC_ALGO_AEAD_ELEPHANT_160V1
-LWC_ALGO_AEAD_ELEPHANT_176V1
-LWC_ALGO_AEAD_ELEPHANT_200V1
-LWC_ALGO_AEAD_ESTATE_ESTATETWEAES128V1
-LWC_ALGO_AEAD_ESTATE_ESTATETWEGIFT128V1
-LWC_ALGO_AEAD_ESTATE_SESTATETWEAES128V1
-LWC_ALGO_AEAD_FORKAE_PAEFFORKSKINNYB128T192N48V1
-LWC_ALGO_AEAD_FORKAE_PAEFFORKSKINNYB128T256N112V1
-LWC_ALGO_AEAD_FORKAE_PAEFFORKSKINNYB128T288N104V1
-LWC_ALGO_AEAD_FORKAE_PAEFFORKSKINNYB64T192N48V1
-LWC_ALGO_AEAD_FORKAE_SAEFFORKSKINNYB128T192N56V1
-LWC_ALGO_AEAD_FORKAE_SAEFFORKSKINNYB128T256N120V1
-LWC_ALGO_AEAD_GIFT_COFB_GIFTCOFB128V1
-LWC_ALGO_AEAD_GIMLI_GIMLI24V1
-LWC_ALGO_AEAD_GRAIN128AEAD
-LWC_ALGO_AEAD_HYENA_HYENAV1
-LWC_ALGO_AEAD_ISAP_ISAPA128AV20
-LWC_ALGO_AEAD_ISAP_ISAPA128V20
-LWC_ALGO_AEAD_ISAP_ISAPK128AV20
-LWC_ALGO_AEAD_ISAP_ISAPK128V20
-LWC_ALGO_AEAD_KNOT_KNOT128V1
-LWC_ALGO_AEAD_KNOT_KNOT128V2
-LWC_ALGO_AEAD_KNOT_KNOT192
-LWC_ALGO_AEAD_KNOT_KNOT256
-LWC_ALGO_AEAD_LOTUS_LOCUS_TWEGIFT64LOCUSAEADV1
-LWC_ALGO_AEAD_LOTUS_LOCUS_TWEGIFT64LOTUSAEADV1
-LWC_ALGO_AEAD_MIXFEED
-LWC_ALGO_AEAD_ORANGE_ORANGEZESTV1
-LWC_ALGO_AEAD_ORIBATIDA_ORIBATIDA192V12
-LWC_ALGO_AEAD_ORIBATIDA_ORIBATIDA256V12
-LWC_ALGO_AEAD_PHOTON_BEETLE_PHOTONBEETLEAEAD128RATE128V1
-LWC_ALGO_AEAD_PHOTON_BEETLE_PHOTONBEETLEAEAD128RATE32V1
-LWC_ALGO_AEAD_PYJAMASK_PYJAMASK128AEADV1
-LWC_ALGO_AEAD_PYJAMASK_PYJAMASK96AEADV1
-LWC_ALGO_AEAD_ROMULUS_ROMULUSM1V12
-LWC_ALGO_AEAD_ROMULUS_ROMULUSM2V12
-LWC_ALGO_AEAD_ROMULUS_ROMULUSM3V12
-LWC_ALGO_AEAD_ROMULUS_ROMULUSN1V12
-LWC_ALGO_AEAD_ROMULUS_ROMULUSN2V12
-LWC_ALGO_AEAD_ROMULUS_ROMULUSN3V12
-LWC_ALGO_AEAD_SAEAES_SAEAES128A120T128V1
-LWC_ALGO_AEAD_SAEAES_SAEAES128A120T64V1
-LWC_ALGO_AEAD_SAEAES_SAEAES128A64T128V1
-LWC_ALGO_AEAD_SAEAES_SAEAES128A64T64V1
-LWC_ALGO_AEAD_SAEAES_SAEAES192A120T128V1
-LWC_ALGO_AEAD_SAEAES_SAEAES192A64T128V1
-LWC_ALGO_AEAD_SAEAES_SAEAES192A64T64V1
-LWC_ALGO_AEAD_SAEAES_SAEAES256A120T128V1
-LWC_ALGO_AEAD_SAEAES_SAEAES256A64T128V1
-LWC_ALGO_AEAD_SAEAES_SAEAES256A64T64V1
-LWC_ALGO_AEAD_SATURNIN_SATURNINCTRCASCADEV2
-LWC_ALGO_AEAD_SATURNIN_SATURNINSHORTV2
-LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK296128V1
-LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK29664V1
-LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK3128128V1
-LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK312864V1
-LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK396128V1
-LWC_ALGO_AEAD_SKINNY_SKINNYAEADTK39664V1
-LWC_ALGO_AEAD_SPARKLE_SCHWAEMM128128V1
-LWC_ALGO_AEAD_SPARKLE_SCHWAEMM192192V1
-LWC_ALGO_AEAD_SPARKLE_SCHWAEMM256128V1
-LWC_ALGO_AEAD_SPARKLE_SCHWAEMM256256V1
-LWC_ALGO_AEAD_SPIX_128V1
-LWC_ALGO_AEAD_SPOC_128SLISCPLIGHT_256V1
-LWC_ALGO_AEAD_SPOC_64SLISCPLIGHT_192V1
-LWC_ALGO_AEAD_SPOOK_128MU_384V1
-LWC_ALGO_AEAD_SPOOK_128SU_384V1
-LWC_ALGO_AEAD_SPOOK_128MU_512V1
-LWC_ALGO_AEAD_SPOOK_128SU_512V1
-LWC_ALGO_AEAD_SUBTERRANEAN_V1
-LWC_ALGO_AEAD_SUNDAEGIFT0V1
-LWC_ALGO_AEAD_SUNDAEGIFT128V1
-LWC_ALGO_AEAD_SUNDAEGIFT64V1
-LWC_ALGO_AEAD_SUNDAEGIFT96V1
-LWC_ALGO_AEAD_TINYJAMBU128
-LWC_ALGO_AEAD_TINYJAMBU192
-LWC_ALGO_AEAD_TINYJAMBU256
-LWC_ALGO_WAGE_128v1
-LWC_ALGO_AEAD_XOODYAKV1
-
-HASH list:
-
-
-LWC_ALGO_HASH_ACEHASH256v1
-LWC_ALGO_HASH_ASCONHASHv12
-LWC_ALGO_HASH_ASCONXOFv12
-LWC_ALGO_HASH_DRYGASCON128
-LWC_ALGO_HASH_DRYGASCON256
-LWC_ALGO_HASH_GIMLI_GIMLI24V1
-LWC_ALGO_HASH_KNOT_256V1
-LWC_ALGO_HASH_KNOT_256V2
-LWC_ALGO_HASH_KNOT_384
-LWC_ALGO_HASH_KNOT_512
-LWC_ALGO_HASH_ORANGISHV1
-LWC_ALGO_HASH_PHOTON_BEETLE_PHOTONBEETLEHASH256RATE32V1
-LWC_ALGO_HASH_SATURNIN_SATURNINHASHV2
-LWC_ALGO_HASH_SKINNY_SKINNYHASHTK2
-LWC_ALGO_HASH_SKINNY_SKINNYHASHTK3
-LWC_ALGO_HASH_SPARKLE_ESCH256V1
-LWC_ALGO_HASH_SPARKLE_ESCH384V1
-LWC_ALGO_HASH_SUBTERRANEAN_V1
-LWC_ALGO_HASH_XOODYAKV1
-
-
-Now compiling starts
-
-
-**** Compiling AEAD LWC_ALGO_ACE_128v1 O0 0  of  534 Seconds passed:  0.00099945068359375
+**** Compiling AEAD LWC_ALGO_ACE_128v1 O1 1  of  534 Seconds passed:  26.794190645217896
+	12:12:28 Build Finished. 0 errors, 0 warnings. (took 4s.816ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  21732	    120	   3152	  25004	   61ac	lwc_nist_benchmark_stm32f303vc.elf
 **** Uploading Code...
 **** Sleeping 15 seconds, algorithm works on MCU
-**** Compiling HASH       LWC_ALGO_HASH_ACEHASH256v1       O0    0 of 114  Seconds passed:  10.144169330596924
+**** Compiling AEAD LWC_ALGO_ACE_128v1 O2 2  of  534 Seconds passed:  53.83227896690369
+	12:12:55 Build Finished. 0 errors, 0 warnings. (took 4s.947ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  21860	    120	   3152	  25132	   622c	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ACE_128v1 O3 3  of  534 Seconds passed:  81.17144536972046
+	12:13:22 Build Finished. 0 errors, 0 warnings. (took 4s.712ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  22912	    120	   3152	  26184	   6648	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ACE_128v1 Os 4  of  534 Seconds passed:  108.0371356010437
+	12:13:49 Build Finished. 0 errors, 0 warnings. (took 4s.621ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  21348	    120	   3152	  24620	   602c	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ACE_128v1 Ofast 5  of  534 Seconds passed:  134.81524801254272
+	12:14:15 Build Finished. 0 errors, 0 warnings. (took 4s.628ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  22920	    120	   3152	  26192	   6650	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128av12 O0 6  of  534 Seconds passed:  161.6510715484619
+	12:14:42 Build Finished. 0 errors, 0 warnings. (took 4s.727ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  25204	    120	   3152	  28476	   6f3c	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128av12 O1 7  of  534 Seconds passed:  188.62647438049316
+	12:15:09 Build Finished. 0 errors, 0 warnings. (took 4s.635ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  20400	    120	   3152	  23672	   5c78	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128av12 O2 8  of  534 Seconds passed:  215.3972795009613
+	12:15:36 Build Finished. 0 errors, 0 warnings. (took 4s.624ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  20512	    120	   3152	  23784	   5ce8	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128av12 O3 9  of  534 Seconds passed:  241.92351293563843
+	12:16:03 Build Finished. 0 errors, 0 warnings. (took 4s.695ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  20520	    120	   3152	  23792	   5cf0	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128av12 Os 10  of  534 Seconds passed:  268.8241038322449
+	12:16:29 Build Finished. 0 errors, 0 warnings. (took 4s.576ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  20368	    120	   3152	  23640	   5c58	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128av12 Ofast 11  of  534 Seconds passed:  295.5054850578308
+	12:16:57 Build Finished. 0 errors, 0 warnings. (took 4s.740ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  20528	    120	   3152	  23800	   5cf8	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128v12 O0 12  of  534 Seconds passed:  322.6263258457184
+	12:17:23 Build Finished. 0 errors, 0 warnings. (took 4s.762ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  23868	    120	   3152	  27140	   6a04	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128v12 O1 13  of  534 Seconds passed:  349.52732586860657
+	12:17:50 Build Finished. 0 errors, 0 warnings. (took 4s.762ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19792	    120	   3152	  23064	   5a18	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128v12 O2 14  of  534 Seconds passed:  376.41232204437256
+	12:18:17 Build Finished. 0 errors, 0 warnings. (took 4s.717ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19840	    120	   3152	  23112	   5a48	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128v12 O3 15  of  534 Seconds passed:  403.1039478778839
+	12:18:44 Build Finished. 0 errors, 0 warnings. (took 4s.762ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19856	    120	   3152	  23128	   5a58	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128v12 Os 16  of  534 Seconds passed:  430.04608726501465
+	12:19:11 Build Finished. 0 errors, 0 warnings. (took 4s.885ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19680	    120	   3152	  22952	   59a8	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_128v12 Ofast 17  of  534 Seconds passed:  457.08170914649963
+	12:19:38 Build Finished. 0 errors, 0 warnings. (took 4s.899ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19864	    120	   3152	  23136	   5a60	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_80pqv12 O0 18  of  534 Seconds passed:  484.3413407802582
+	12:20:05 Build Finished. 0 errors, 0 warnings. (took 4s.807ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  24348	    120	   3152	  27620	   6be4	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_80pqv12 O1 19  of  534 Seconds passed:  511.4380965232849
+	12:20:32 Build Finished. 0 errors, 0 warnings. (took 4s.688ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19816	    120	   3152	  23088	   5a30	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_80pqv12 O2 20  of  534 Seconds passed:  538.2364499568939
+	12:20:59 Build Finished. 0 errors, 0 warnings. (took 4s.687ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19904	    120	   3152	  23176	   5a88	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_80pqv12 O3 21  of  534 Seconds passed:  564.9036662578583
+	12:21:25 Build Finished. 0 errors, 0 warnings. (took 4s.687ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19920	    120	   3152	  23192	   5a98	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_80pqv12 Os 22  of  534 Seconds passed:  591.4004006385803
+	12:21:52 Build Finished. 0 errors, 0 warnings. (took 4s.708ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19732	    120	   3152	  23004	   59dc	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_ASCON_80pqv12 Ofast 23  of  534 Seconds passed:  617.9841132164001
+	12:22:19 Build Finished. 0 errors, 0 warnings. (took 4s.939ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19928	    120	   3152	  23200	   5aa0	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_COMET_128aesv1 O0 24  of  534 Seconds passed:  644.6510870456696
+	12:22:45 Build Finished. 0 errors, 0 warnings. (took 4s.871ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  28044	    120	   3152	  31316	   7a54	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_COMET_128aesv1 O1 25  of  534 Seconds passed:  672.0308179855347
+	12:23:13 Build Finished. 0 errors, 0 warnings. (took 4s.631ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  24192	    120	   3152	  27464	   6b48	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_COMET_128aesv1 O2 26  of  534 Seconds passed:  698.790650844574
+	12:23:39 Build Finished. 0 errors, 0 warnings. (took 4s.654ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  24168	    120	   3152	  27440	   6b30	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_COMET_128aesv1 O3 27  of  534 Seconds passed:  725.4775855541229
+	12:24:07 Build Finished. 0 errors, 0 warnings. (took 5s.150ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  24884	    120	   3152	  28156	   6dfc	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_COMET_128aesv1 Os 28  of  534 Seconds passed:  753.2450232505798
+	12:24:34 Build Finished. 0 errors, 0 warnings. (took 4s.692ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  23768	    120	   3152	  27040	   69a0	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling AEAD LWC_ALGO_COMET_128aesv1 Ofast 29  of  534 Seconds passed:  780.1298158168793
+	12:25:01 Build Finished. 0 errors, 0 warnings. (took 4s.745ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  24892	    120	   3152	  28164	   6e04	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ACEHASH256v1       O0    0 of 114  Seconds passed:  806.988734960556
+	12:25:28 Build Finished. 0 errors, 0 warnings. (took 4s.702ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19396	    120	   3152	  22668	   588c	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ACEHASH256v1       O1    1 of 114  Seconds passed:  833.6711935997009
+	12:25:54 Build Finished. 0 errors, 0 warnings. (took 4s.758ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17984	    120	   3152	  21256	   5308	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ACEHASH256v1       O2    2 of 114  Seconds passed:  860.1772062778473
+	12:26:21 Build Finished. 0 errors, 0 warnings. (took 4s.704ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  18212	    120	   3152	  21484	   53ec	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ACEHASH256v1       O3    3 of 114  Seconds passed:  886.8467552661896
+	12:26:47 Build Finished. 0 errors, 0 warnings. (took 4s.700ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  18460	    120	   3152	  21732	   54e4	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ACEHASH256v1       Os    4 of 114  Seconds passed:  913.4209980964661
+	12:27:14 Build Finished. 0 errors, 0 warnings. (took 4s.647ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17844	    120	   3152	  21116	   527c	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ACEHASH256v1    Ofast    5 of 114  Seconds passed:  939.9367709159851
+	12:27:41 Build Finished. 0 errors, 0 warnings. (took 4s.819ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  18468	    120	   3152	  21740	   54ec	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ASCONHASHv12       O0    6 of 114  Seconds passed:  966.6388258934021
+	12:28:08 Build Finished. 0 errors, 0 warnings. (took 5s.14ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19264	    120	   3152	  22536	   5808	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ASCONHASHv12       O1    7 of 114  Seconds passed:  993.853627204895
+	12:28:35 Build Finished. 0 errors, 0 warnings. (took 4s.879ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17440	    120	   3152	  20712	   50e8	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ASCONHASHv12       O2    8 of 114  Seconds passed:  1020.6398358345032
+	12:29:01 Build Finished. 0 errors, 0 warnings. (took 4s.636ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17440	    120	   3152	  20712	   50e8	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ASCONHASHv12       O3    9 of 114  Seconds passed:  1047.0477843284607
+	12:29:28 Build Finished. 0 errors, 0 warnings. (took 4s.821ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17456	    120	   3152	  20728	   50f8	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ASCONHASHv12       Os   10 of 114  Seconds passed:  1073.993824005127
+	12:29:55 Build Finished. 0 errors, 0 warnings. (took 4s.709ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17392	    120	   3152	  20664	   50b8	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_ASCONHASHv12    Ofast   11 of 114  Seconds passed:  1100.7305414676666
+	12:30:22 Build Finished. 0 errors, 0 warnings. (took 5s.253ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17464	    120	   3152	  20736	   5100	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH        LWC_ALGO_HASH_ASCONXOFv12       O0   12 of 114  Seconds passed:  1128.1050565242767
+	12:30:49 Build Finished. 0 errors, 0 warnings. (took 4s.565ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  19264	    120	   3152	  22536	   5808	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH        LWC_ALGO_HASH_ASCONXOFv12       O1   13 of 114  Seconds passed:  1154.8754377365112
+	12:31:16 Build Finished. 0 errors, 0 warnings. (took 5s.141ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17440	    120	   3152	  20712	   50e8	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH        LWC_ALGO_HASH_ASCONXOFv12       O2   14 of 114  Seconds passed:  1181.9312551021576
+	12:31:43 Build Finished. 0 errors, 0 warnings. (took 4s.752ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17440	    120	   3152	  20712	   50e8	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH        LWC_ALGO_HASH_ASCONXOFv12       O3   15 of 114  Seconds passed:  1208.4685690402985
+	12:32:09 Build Finished. 0 errors, 0 warnings. (took 4s.678ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17456	    120	   3152	  20728	   50f8	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH        LWC_ALGO_HASH_ASCONXOFv12       Os   16 of 114  Seconds passed:  1235.0145831108093
+	12:32:35 Build Finished. 0 errors, 0 warnings. (took 4s.574ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17388	    120	   3152	  20660	   50b4	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH        LWC_ALGO_HASH_ASCONXOFv12    Ofast   17 of 114  Seconds passed:  1261.3313581943512
+	12:33:02 Build Finished. 0 errors, 0 warnings. (took 4s.632ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  17464	    120	   3152	  20736	   5100	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON128       O0   18 of 114  Seconds passed:  1287.690430879593
+	12:33:28 Build Finished. 0 errors, 0 warnings. (took 4s.628ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  23876	    120	   3152	  27148	   6a0c	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON128       O1   19 of 114  Seconds passed:  1314.5596644878387
+	12:33:55 Build Finished. 0 errors, 0 warnings. (took 4s.824ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  22072	    120	   3152	  25344	   6300	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON128       O2   20 of 114  Seconds passed:  1341.4314098358154
+	12:34:22 Build Finished. 0 errors, 0 warnings. (took 4s.694ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  22052	    120	   3152	  25324	   62ec	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON128       O3   21 of 114  Seconds passed:  1368.1706364154816
+	12:34:49 Build Finished. 0 errors, 0 warnings. (took 4s.689ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  23168	    120	   3152	  26440	   6748	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON128       Os   22 of 114  Seconds passed:  1394.950358390808
+	12:35:16 Build Finished. 0 errors, 0 warnings. (took 4s.688ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  21820	    120	   3152	  25092	   6204	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON128    Ofast   23 of 114  Seconds passed:  1421.8341698646545
+	12:35:42 Build Finished. 0 errors, 0 warnings. (took 4s.583ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  23176	    120	   3152	  26448	   6750	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON256       O0   24 of 114  Seconds passed:  1448.8190684318542
+	12:36:10 Build Finished. 0 errors, 0 warnings. (took 4s.760ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  24176	    120	   3152	  27448	   6b38	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON256       O1   25 of 114  Seconds passed:  1475.7984936237335
+	12:36:36 Build Finished. 0 errors, 0 warnings. (took 4s.634ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  22136	    120	   3152	  25408	   6340	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON256       O2   26 of 114  Seconds passed:  1502.3210797309875
+	12:37:03 Build Finished. 0 errors, 0 warnings. (took 4s.700ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  22180	    120	   3152	  25452	   636c	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON256       O3   27 of 114  Seconds passed:  1529.0679893493652
+	12:37:30 Build Finished. 0 errors, 0 warnings. (took 4s.696ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  24080	    120	   3152	  27352	   6ad8	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON256       Os   28 of 114  Seconds passed:  1555.9447922706604
+	12:37:57 Build Finished. 0 errors, 0 warnings. (took 4s.629ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  21924	    120	   3152	  25196	   626c	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
+**** Compiling HASH       LWC_ALGO_HASH_DRYGASCON256    Ofast   29 of 114  Seconds passed:  1582.6257767677307
+	12:38:23 Build Finished. 0 errors, 0 warnings. (took 4s.697ms)
+	   text	   data	    bss	    dec	    hex	filename
+	  24088	    120	   3152	  27360	   6ae0	lwc_nist_benchmark_stm32f303vc.elf
+**** Uploading Code...
+**** Sleeping 15 seconds, algorithm works on MCU
 Compilation finished
