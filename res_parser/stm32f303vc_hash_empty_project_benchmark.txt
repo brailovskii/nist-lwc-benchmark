@@ -1,0 +1,121 @@
+
+
+
+
+Starting...
+Test Disabled
+May  2 2021 11:21:57
+Optimization: O0
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  17112B Total RAM:   1728B 
+Sections: text  16176B data    112B bss   1616B
+msg_len:     0 hash:        86 us:        5 ms:      0 
+msg_len:     8 hash:        86 us:        5 ms:      0 
+msg_len:    16 hash:        86 us:        5 ms:      0 
+msg_len:    32 hash:        86 us:        5 ms:      0 
+msg_len:    64 hash:        86 us:        5 ms:      0 
+msg_len:   128 hash:        86 us:        5 ms:      0 
+msg_len:   256 hash:        86 us:        5 ms:      0 
+msg_len:   512 hash:        86 us:        5 ms:      0 
+msg_len:  1024 hash:        86 us:        5 ms:      0 
+HASH Test Disabled May  2 2021 11:21:57 Optimization: O0 Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  16176 data    112 bss   1616 HASHTotRes: h(0) = 86 h(8) = 86 h(16) = 86 h(32) = 86 h(64) = 86 h(128) = 86 h(256) = 86 h(512) = 86 h(1024) = 86 
+
+
+
+Starting...
+Test Disabled
+May  2 2021 11:22:11
+Optimization: O1
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  16676B Total RAM:   1728B 
+Sections: text  15740B data    112B bss   1616B
+msg_len:     0 hash:        84 us:        5 ms:      0 
+msg_len:     8 hash:        84 us:        5 ms:      0 
+msg_len:    16 hash:        84 us:        5 ms:      0 
+msg_len:    32 hash:        84 us:        5 ms:      0 
+msg_len:    64 hash:        84 us:        5 ms:      0 
+msg_len:   128 hash:        84 us:        5 ms:      0 
+msg_len:   256 hash:        84 us:        5 ms:      0 
+msg_len:   512 hash:        84 us:        5 ms:      0 
+msg_len:  1024 hash:        84 us:        5 ms:      0 
+HASH Test Disabled May  2 2021 11:22:11 Optimization: O1 Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  15740 data    112 bss   1616 HASHTotRes: h(0) = 84 h(8) = 84 h(16) = 84 h(32) = 84 h(64) = 84 h(128) = 84 h(256) = 84 h(512) = 84 h(1024) = 84 
+
+
+
+Starting...
+Test Disabled
+May  2 2021 11:22:26
+Optimization: O2
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  16668B Total RAM:   1728B 
+Sections: text  15732B data    112B bss   1616B
+msg_len:     0 hash:        80 us:        5 ms:      0 
+msg_len:     8 hash:        80 us:        5 ms:      0 
+msg_len:    16 hash:        80 us:        5 ms:      0 
+msg_len:    32 hash:        80 us:        5 ms:      0 
+msg_len:    64 hash:        80 us:        5 ms:      0 
+msg_len:   128 hash:        80 us:        5 ms:      0 
+msg_len:   256 hash:        80 us:        5 ms:      0 
+msg_len:   512 hash:        80 us:        5 ms:      0 
+msg_len:  1024 hash:        80 us:        5 ms:      0 
+HASH Test Disabled May  2 2021 11:22:26 Optimization: O2 Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  15732 data    112 bss   1616 HASHTotRes: h(0) = 80 h(8) = 80 h(16) = 80 h(32) = 80 h(64) = 80 h(128) = 80 h(256) = 80 h(512) = 80 h(1024) = 80 
+
+
+
+Starting...
+Test Disabled
+May  2 2021 11:22:40
+Optimization: O3
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  16684B Total RAM:   1728B 
+Sections: text  15748B data    112B bss   1616B
+msg_len:     0 hash:        80 us:        5 ms:      0 
+msg_len:     8 hash:        80 us:        5 ms:      0 
+msg_len:    16 hash:        80 us:        5 ms:      0 
+msg_len:    32 hash:        80 us:        5 ms:      0 
+msg_len:    64 hash:        80 us:        5 ms:      0 
+msg_len:   128 hash:        80 us:        5 ms:      0 
+msg_len:   256 hash:        80 us:        5 ms:      0 
+msg_len:   512 hash:        80 us:        5 ms:      0 
+msg_len:  1024 hash:        80 us:        5 ms:      0 
+HASH Test Disabled May  2 2021 11:22:40 Optimization: O3 Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  15748 data    112 bss   1616 HASHTotRes: h(0) = 80 h(8) = 80 h(16) = 80 h(32) = 80 h(64) = 80 h(128) = 80 h(256) = 80 h(512) = 80 h(1024) = 80 
+
+
+
+Starting...
+Test Disabled
+May  2 2021 11:22:54
+Optimization: Os
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  16616B Total RAM:   1728B 
+Sections: text  15696B data    112B bss   1616B
+msg_len:     0 hash:        77 us:        4 ms:      0 
+msg_len:     8 hash:        77 us:        4 ms:      0 
+msg_len:    16 hash:        77 us:        4 ms:      0 
+msg_len:    32 hash:        77 us:        4 ms:      0 
+msg_len:    64 hash:        77 us:        4 ms:      0 
+msg_len:   128 hash:        77 us:        4 ms:      0 
+msg_len:   256 hash:        77 us:        4 ms:      0 
+msg_len:   512 hash:        77 us:        4 ms:      0 
+msg_len:  1024 hash:        77 us:        4 ms:      0 
+HASH Test Disabled May  2 2021 11:22:54 Optimization: Os Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  15696 data    112 bss   1616 HASHTotRes: h(0) = 77 h(8) = 77 h(16) = 77 h(32) = 77 h(64) = 77 h(128) = 77 h(256) = 77 h(512) = 77 h(1024) = 77 
+
+
+
+Starting...
+Test Disabled
+May  2 2021 11:23:08
+Optimization: Ofast
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  16692B Total RAM:   1728B 
+Sections: text  15748B data    112B bss   1616B
+msg_len:     0 hash:        80 us:        5 ms:      0 
+msg_len:     8 hash:        80 us:        5 ms:      0 
+msg_len:    16 hash:        80 us:        5 ms:      0 
+msg_len:    32 hash:        80 us:        5 ms:      0 
+msg_len:    64 hash:        80 us:        5 ms:      0 
+msg_len:   128 hash:        80 us:        5 ms:      0 
+msg_len:   256 hash:        80 us:        5 ms:      0 
+msg_len:   512 hash:        80 us:        5 ms:      0 
+msg_len:  1024 hash:        80 us:        5 ms:      0 
+HASH Test Disabled May  2 2021 11:23:08 Optimization: Ofast Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  15748 data    112 bss   1616 HASHTotRes: h(0) = 80 h(8) = 80 h(16) = 80 h(32) = 80 h(64) = 80 h(128) = 80 h(256) = 80 h(512) = 80 h(1024) = 80 
