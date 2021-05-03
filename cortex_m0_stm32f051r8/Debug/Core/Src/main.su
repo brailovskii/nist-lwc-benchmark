@@ -4,4 +4,4 @@ main.c:116:6:SystemClock_Config	104	static
 main.c:161:13:MX_TIM6_Init	16	static
 main.c:199:13:MX_USART1_UART_Init	8	static
 main.c:234:13:MX_GPIO_Init	8	static
-main.c:250:6:Error_Handler	8	static,ignoring_inline_asm
+main.c:250:6:Error_Handler	0	static,ignoring_inline_asm

@@ -1,3 +1,0 @@
-hash.c:49:6:injectm_ref	48	static
-hash.c:84:6:trunc_state	32	static
-hash.c:99:5:crypto_hash	128	static
