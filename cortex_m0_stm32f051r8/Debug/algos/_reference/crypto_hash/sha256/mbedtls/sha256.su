@@ -1,0 +1,14 @@
+sha256.c:89:6:nbedtls_sha256_init	8	static
+sha256.c:96:6:nbedtls_sha256_free	8	static
+sha256.c:104:6:nbedtls_sha256_clone	8	static
+sha256.c:116:5:nbedtls_sha256_starts_ret	8	static
+sha256.c:155:6:nbedtls_sha256_starts	8	static
+sha256.c:257:5:nbedtls_internal_sha256_process	456	static
+sha256.c:326:6:nbedtls_sha256_process	8	static
+sha256.c:337:5:nbedtls_sha256_update_ret	32	static
+sha256.c:388:6:nbedtls_sha256_update	8	static
+sha256.c:399:5:nbedtls_sha256_finish_ret	16	static
+sha256.c:462:6:nbedtls_sha256_finish	8	static
+sha256.c:474:5:nbedtls_sha256_ret	136	static
+sha256.c:504:6:nbedtls_sha256	8	static
+sha256.c:513:5:crypto_hash	8	static

@@ -576,9 +576,15 @@
 #define ALGO_NAME_STR	"LWC_ALGO_HASH_SPARKLE_ESCH384V1"
 #endif
 
+#ifdef LWC_ALGO_HASH_SHA256_MBTLS
+#include "../algos/_reference/crypto_hash/sha256/mbedtls/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_HASH_SHA256_MBTLS"
+#endif
 
-
-
+#ifdef LWC_ALGO_AES_GCM_MBED_TLS
+#include "../algos/_reference/crypto_aead/aes-gcm/mbedtls/api.h"
+#define ALGO_NAME_STR	"LWC_ALGO_AES_GCM_MBED_TLS"
+#endif
 
 
 #endif /* INC_LWC_CONFIG_H_ */

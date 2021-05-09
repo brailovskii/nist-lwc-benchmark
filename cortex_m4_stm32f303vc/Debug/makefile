@@ -118,6 +118,8 @@ RM := rm -rf
 -include algos/ascon/Implementations/crypto_aead/ascon128av12/ref/subdir.mk
 -include algos/ace/Implementations/crypto_hash/acehash256v1/ref/subdir.mk
 -include algos/ace/Implementations/crypto_aead/aceae128v1/ref/subdir.mk
+-include algos/_reference/crypto_hash/sha256/mbedtls/subdir.mk
+-include algos/_reference/crypto_aead/aes-gcm/mbedtls/subdir.mk
 -include Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk

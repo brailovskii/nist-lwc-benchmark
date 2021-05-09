@@ -24,6 +24,8 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32F0xx_HAL_Driver/Src \
+algos/_reference/crypto_aead/aes-gcm/mbedtls \
+algos/_reference/crypto_hash/sha256/mbedtls \
 algos/ace/Implementations/crypto_aead/aceae128v1/ref \
 algos/ace/Implementations/crypto_hash/acehash256v1/ref \
 algos/ascon/Implementations/crypto_aead/ascon128av12/ref \

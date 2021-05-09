@@ -19,6 +19,7 @@
 
 #ifdef LWC_ALGO_AEAD
 
+#define LWC_ALGO_AES_GCM_MBED_TLS
 
 //#define LWC_ALGO_ACE_128v1
 
@@ -147,9 +148,10 @@
 
 
 
-
-
 #ifdef LWC_ALGO_HASH
+
+#define LWC_ALGO_HASH_SHA256_MBTLS
+
 
 //#define LWC_ALGO_HASH_ACEHASH256v1
 
