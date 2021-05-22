@@ -56,6 +56,7 @@ int crypto_aead_decrypt(unsigned char *m, unsigned long long *mlen,
 {
     int result = skinny_aead_decrypt(ad, adlen, m, (size_t *)mlen, k, npub, c, clen);
     (void)nsec;
+    *mlen &= 0xFFFFFFFF; //mlen is used as 32 bit number during decryption, but it is 64 bit number, at least for this architecture
     return result;
 }
 

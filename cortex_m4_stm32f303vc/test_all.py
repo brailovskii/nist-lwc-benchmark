@@ -117,6 +117,8 @@ printLog("\n\nNow compiling starts\n\n")
 
 start_time_aead = time.time()
 
+
+
 '''
 #Empty project AEAD
 for opt_lvl in opt_lvl_list[0:]:
@@ -138,13 +140,14 @@ for opt_lvl in opt_lvl_list[0:]:
     printLog("**** Uploading Code...")
     upload_code()
     printLog("**** Sleeping 1 seconds, algorithm works on MCU")
-    time.sleep(1)
-
-
+    time.sleep(5)
 
 '''
 
-for algo in aead_algos_list[0:1]:
+
+
+
+for algo in aead_algos_list[0:]:
     for opt_lvl in opt_lvl_list[0:]:
         write_aead_header_file(opt_lvl, "ENABLE_ALGO_TEST", algo, "LWC_ALGO_AEAD")
         printLog("**** Compiling AEAD " + algo + " " + opt_lvl, end = " " )
@@ -153,12 +156,14 @@ for algo in aead_algos_list[0:1]:
         build_config()
         printLog("**** Uploading Code...")
         upload_code()
-        printLog("**** Sleeping 15 seconds, algorithm works on MCU")
+        printLog("**** Sleeping 25 seconds, algorithm works on MCU")
         time.sleep(25)
-    
 
+
+
+'''    
  
-for algo in hash_algos_list[0:1]:
+for algo in hash_algos_list[0:]:
     for opt_lvl in opt_lvl_list[0:]:
         write_aead_header_file(opt_lvl, "ENABLE_ALGO_TEST",algo, "LWC_ALGO_HASH")
         printLog("**** Compiling HASH %32s %8s" %(algo, opt_lvl), end = " " )
@@ -167,10 +172,10 @@ for algo in hash_algos_list[0:1]:
         build_config()
         printLog("**** Uploading Code...")
         upload_code()
-        printLog("**** Sleeping 15 seconds, algorithm works on MCU")
+        printLog("**** Sleeping 25 seconds, algorithm works on MCU")
         time.sleep(25)
         
-
+'''
 
 
 #restore header file content

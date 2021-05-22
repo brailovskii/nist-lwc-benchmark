@@ -54,6 +54,7 @@
 void tick_msr_start(void);
 uint32_t tick_msr_end(void);
 void lwc_printf(const char *format, ...);
+void lwc_print_hex_str(const void *data, uint32_t len);
 
 void init_buffer(unsigned char *buffer, unsigned long long numbytes);
 int aead_generate_test_vectors();
@@ -125,7 +126,7 @@ int aead_generate_test_vectors() {
 	unsigned char msg2[MAX_MESSAGE_LENGTH];
 	unsigned char ad[MAX_ASSOCIATED_DATA_LENGTH];
 	unsigned char ct[MAX_MESSAGE_LENGTH + CRYPTO_ABYTES];
-	unsigned long long clen, mlen2;
+	unsigned long long clen = 0, mlen2 = 0;
 	int func_ret = 0, ret_val = KAT_SUCCESS;
 
 	init_buffer(key, sizeof(key));
@@ -167,7 +168,9 @@ int aead_generate_test_vectors() {
 #endif
 			tick_msr_end();
 
-			lwc_printf("dec:%8lu us:%8lu ms:%8lu \n", gb_tick_cnt, gb_tick_cnt / 16, gb_ms_ticks);
+			lwc_printf("dec:%8lu us:%8lu ms:%8lu ", gb_tick_cnt, gb_tick_cnt / 16, gb_ms_ticks);
+			lwc_print_hex_str(ct, clen);
+			lwc_printf("\n");
 			aead_dec_ticks_res[ticks_res_pos] = gb_tick_cnt;
 
 
@@ -235,7 +238,9 @@ int hash_generate_test_vectors(){
 		hash_ticks_res[ticks_res_pos++] = gb_tick_cnt;
 
 		if(ret_val == 0) {
-			lwc_printf( "hash:%10d us:%9d ms:%7d \n", (int)gb_tick_cnt, (int)gb_tick_cnt/16, (int)gb_ms_ticks);
+			lwc_printf( "hash:%10d us:%9d ms:%7d ", (int)gb_tick_cnt, (int)gb_tick_cnt/16, (int)gb_ms_ticks);
+			lwc_print_hex_str(digest, sizeof(digest));
+			lwc_printf("\n");
 		}else{
 			ret_val = KAT_CRYPTO_FAILURE;
 			break;
@@ -329,6 +334,18 @@ void lwc_printf(const char *format, ...) {
 
 	HAL_UART_Transmit(&huart1, (uint8_t*) dbg_out_buf, strlen(dbg_out_buf), 100);
 }
+
+
+void lwc_print_hex_str(const void *data, uint32_t len){
+
+	uint8_t *buf = (uint8_t *)data;
+
+	for(uint32_t i = 0; i <len; i++){
+		lwc_printf("%02X", buf[i]);
+	}
+
+}
+
 
 #endif
 

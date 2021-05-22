@@ -4,14 +4,14 @@ import sys
 import re
 
 def printRes(*args, **kwargs):
-    with open('res_hash.csv','a') as file:
+    with open('stm32f303vc_res_hash.csv','a') as file:
         print(*args, **kwargs, file=file)
 
 
-empty_prj_text_size = { "O0" : 16176, "O1" : 15740,  "O2" : 15732,  "O3" : 15748,  "Os" : 15696, "Ofast" : 15748 }
+empty_prj_text_size = { "O0" : 16260, "O1" : 15792,  "O2" : 15796,  "O3" : 15812,  "Os" : 15744, "Ofast" : 15812 }
 
 
-results_fn = "stm32f303vc_aead_hash_benchmark.txt"
+results_fn = "stm32f303_hash_prj_benchmark.txt"
 res_hash_str = "type	algorithm	optimization	text	data	bss	h(0)	h(8)	h(16)	h(32)	h(64)	h(128)	h(256)	h(512)	h(1024)"
 
 print("parsing results")
