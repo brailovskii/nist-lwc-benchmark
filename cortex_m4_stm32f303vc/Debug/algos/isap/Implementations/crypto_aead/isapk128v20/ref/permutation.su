@@ -1,0 +1,5 @@
+permutation.c:8:6:Permutation_Initialize	8	static
+permutation.c:14:6:Permutation_AddBytes	8	static
+permutation.c:23:6:Permutation_OverwriteBytes	8	static
+permutation.c:32:6:Permutation_Permute_Nrounds	8	static
+permutation.c:39:6:Permutation_ExtractBytes	8	static

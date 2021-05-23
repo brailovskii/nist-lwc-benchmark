@@ -1,0 +1,337 @@
+
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:16:41
+Optimization: O0
+Algorithm: LWC_ALGO_ACE_128v1
+Memory usage: Total FLASH:  14132B Total RAM:   1724B 
+Sections: text  13084B data    112B bss   1612B
+msg_len:   0 ad_len:   0  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:   0 ad_len:   8  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:   0 ad_len:  16  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:   0 ad_len:  24  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:   0 ad_len:  32  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       1 
+msg_len:   8 ad_len:   0  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:   8 ad_len:   8  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:   8 ad_len:  16  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:   8 ad_len:  24  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:   8 ad_len:  32  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  16 ad_len:   0  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  16 ad_len:   8  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  16 ad_len:  16  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  16 ad_len:  24  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  16 ad_len:  32  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  24 ad_len:   0  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  24 ad_len:   8  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  24 ad_len:  16  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  24 ad_len:  24  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  24 ad_len:  32  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  32 ad_len:   0  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  32 ad_len:   8  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  32 ad_len:  16  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  32 ad_len:  24  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+msg_len:  32 ad_len:  32  enc:     101 us:       6 ms:       0   dec:     101 us:       6 ms:       0 
+AEAD Test Disabled May 22 2021 22:16:41 Optimization: O0 Algorithm: LWC_ALGO_ACE_128v1 Sections: text  13084 data    112 bss   1612 AEADTotRes: enc(0,0) = 101 dec(0,0) = 101 enc(0,8) = 101 dec(0,8) = 101 enc(0,16) = 101 dec(0,16) = 101 enc(0,24) = 101 dec(0,24) = 101 enc(0,32) = 101 dec(0,32) = 101 enc(8,0) = 101 dec(8,0) = 101 enc(8,8) = 101 dec(8,8) = 101 enc(8,16) = 101 dec(8,16) = 101 enc(8,24) = 101 dec(8,24) = 101 enc(8,32) = 101 dec(8,32) = 101 enc(16,0) = 101 dec(16,0) = 101 enc(16,8) = 101 dec(16,8) = 101 enc(16,16) = 101 dec(16,16) = 101 enc(16,24) = 101 dec(16,24) = 101 enc(16,32) = 101 dec(16,32) = 101 enc(24,0) = 101 dec(24,0) = 101 enc(24,8) = 101 dec(24,8) = 101 enc(24,16) = 101 dec(24,16) = 101 enc(24,24) = 101 dec(24,24) = 101 enc(24,32) = 101 dec(24,32) = 101 enc(32,0) = 101 dec(32,0) = 101 enc(32,8) = 101 dec(32,8) = 101 enc(32,16) = 101 dec(32,16) = 101 enc(32,24) = 101 dec(32,24) = 101 enc(32,32) = 101 dec(32,32) = 101 
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:17:00
+Optimization: O1
+Algorithm: LWC_ALGO_ACE_128v1
+Memory usage: Total FLASH:  13428B Total RAM:   1724B 
+Sections: text  12400B data    112B bss   1612B
+msg_len:   0 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       1 
+msg_len:  16 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+AEAD Test Disabled May 22 2021 22:17:00 Optimization: O1 Algorithm: LWC_ALGO_ACE_128v1 Sections: text  12400 data    112 bss   1612 AEADTotRes: enc(0,0) = 93 dec(0,0) = 93 enc(0,8) = 93 dec(0,8) = 93 enc(0,16) = 93 dec(0,16) = 93 enc(0,24) = 93 dec(0,24) = 93 enc(0,32) = 93 dec(0,32) = 93 enc(8,0) = 93 dec(8,0) = 93 enc(8,8) = 93 dec(8,8) = 93 enc(8,16) = 93 dec(8,16) = 93 enc(8,24) = 93 dec(8,24) = 93 enc(8,32) = 93 dec(8,32) = 93 enc(16,0) = 93 dec(16,0) = 93 enc(16,8) = 93 dec(16,8) = 93 enc(16,16) = 93 dec(16,16) = 93 enc(16,24) = 93 dec(16,24) = 93 enc(16,32) = 93 dec(16,32) = 93 enc(24,0) = 93 dec(24,0) = 93 enc(24,8) = 93 dec(24,8) = 93 enc(24,16) = 93 dec(24,16) = 93 enc(24,24) = 93 dec(24,24) = 93 enc(24,32) = 93 dec(24,32) = 93 enc(32,0) = 93 dec(32,0) = 93 enc(32,8) = 93 dec(32,8) = 93 enc(32,16) = 93 dec(32,16) = 93 enc(32,24) = 93 dec(32,24) = 93 enc(32,32) = 93 dec(32,32) = 93 
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:17:18
+Optimization: O2
+Algorithm: LWC_ALGO_ACE_128v1
+Memory usage: Total FLASH:  13432B Total RAM:   1724B 
+Sections: text  12404B data    112B bss   1612B
+msg_len:   0 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+AEAD Test Disabled May 22 2021 22:17:18 Optimization: O2 Algorithm: LWC_ALGO_ACE_128v1 Sections: text  12404 data    112 bss   1612 AEADTotRes: enc(0,0) = 93 dec(0,0) = 93 enc(0,8) = 93 dec(0,8) = 93 enc(0,16) = 93 dec(0,16) = 93 enc(0,24) = 93 dec(0,24) = 93 enc(0,32) = 93 dec(0,32) = 93 enc(8,0) = 93 dec(8,0) = 93 enc(8,8) = 93 dec(8,8) = 93 enc(8,16) = 93 dec(8,16) = 93 enc(8,24) = 93 dec(8,24) = 93 enc(8,32) = 93 dec(8,32) = 93 enc(16,0) = 93 dec(16,0) = 93 enc(16,8) = 93 dec(16,8) = 93 enc(16,16) = 93 dec(16,16) = 93 enc(16,24) = 93 dec(16,24) = 93 enc(16,32) = 93 dec(16,32) = 93 enc(24,0) = 93 dec(24,0) = 93 enc(24,8) = 93 dec(24,8) = 93 enc(24,16) = 93 dec(24,16) = 93 enc(24,24) = 93 dec(24,24) = 93 enc(24,32) = 93 dec(24,32) = 93 enc(32,0) = 93 dec(32,0) = 93 enc(32,8) = 93 dec(32,8) = 93 enc(32,16) = 93 dec(32,16) = 93 enc(32,24) = 93 dec(32,24) = 93 enc(32,32) = 93 dec(32,32) = 93 
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:17:36
+Optimization: O3
+Algorithm: LWC_ALGO_ACE_128v1
+Memory usage: Total FLASH:  13444B Total RAM:   1724B 
+Sections: text  12416B data    112B bss   1612B
+msg_len:   0 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+AEAD Test Disabled May 22 2021 22:17:36 Optimization: O3 Algorithm: LWC_ALGO_ACE_128v1 Sections: text  12416 data    112 bss   1612 AEADTotRes: enc(0,0) = 93 dec(0,0) = 93 enc(0,8) = 93 dec(0,8) = 93 enc(0,16) = 93 dec(0,16) = 93 enc(0,24) = 93 dec(0,24) = 93 enc(0,32) = 93 dec(0,32) = 93 enc(8,0) = 93 dec(8,0) = 93 enc(8,8) = 93 dec(8,8) = 93 enc(8,16) = 93 dec(8,16) = 93 enc(8,24) = 93 dec(8,24) = 93 enc(8,32) = 93 dec(8,32) = 93 enc(16,0) = 93 dec(16,0) = 93 enc(16,8) = 93 dec(16,8) = 93 enc(16,16) = 93 dec(16,16) = 93 enc(16,24) = 93 dec(16,24) = 93 enc(16,32) = 93 dec(16,32) = 93 enc(24,0) = 93 dec(24,0) = 93 enc(24,8) = 93 dec(24,8) = 93 enc(24,16) = 93 dec(24,16) = 93 enc(24,24) = 93 dec(24,24) = 93 enc(24,32) = 93 dec(24,32) = 93 enc(32,0) = 93 dec(32,0) = 93 enc(32,8) = 93 dec(32,8) = 93 enc(32,16) = 93 dec(32,16) = 93 enc(32,24) = 93 dec(32,24) = 93 enc(32,32) = 93 dec(32,32) = 93 
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:17:56
+Optimization: Os
+Algorithm: LWC_ALGO_ACE_128v1
+Memory usage: Total FLASH:  13360B Total RAM:   1724B 
+Sections: text  12360B data    112B bss   1612B
+msg_len:   0 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  32  enc:      93 us:       5 ms:       1   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+AEAD Test Disabled May 22 2021 22:17:56 Optimization: Os Algorithm: LWC_ALGO_ACE_128v1 Sections: text  12360 data    112 bss   1612 AEADTotRes: enc(0,0) = 93 dec(0,0) = 93 enc(0,8) = 93 dec(0,8) = 93 enc(0,16) = 93 dec(0,16) = 93 enc(0,24) = 93 dec(0,24) = 93 enc(0,32) = 93 dec(0,32) = 93 enc(8,0) = 93 dec(8,0) = 93 enc(8,8) = 93 dec(8,8) = 93 enc(8,16) = 93 dec(8,16) = 93 enc(8,24) = 93 dec(8,24) = 93 enc(8,32) = 93 dec(8,32) = 93 enc(16,0) = 93 dec(16,0) = 93 enc(16,8) = 93 dec(16,8) = 93 enc(16,16) = 93 dec(16,16) = 93 enc(16,24) = 93 dec(16,24) = 93 enc(16,32) = 93 dec(16,32) = 93 enc(24,0) = 93 dec(24,0) = 93 enc(24,8) = 93 dec(24,8) = 93 enc(24,16) = 93 dec(24,16) = 93 enc(24,24) = 93 dec(24,24) = 93 enc(24,32) = 93 dec(24,32) = 93 enc(32,0) = 93 dec(32,0) = 93 enc(32,8) = 93 dec(32,8) = 93 enc(32,16) = 93 dec(32,16) = 93 enc(32,24) = 93 dec(32,24) = 93 enc(32,32) = 93 dec(32,32) = 93 
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:18:14
+Optimization: Ofast
+Algorithm: LWC_ALGO_ACE_128v1
+Memory usage: Total FLASH:  13452B Total RAM:   1724B 
+Sections: text  12416B data    112B bss   1612B
+msg_len:   0 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   0 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       1 
+msg_len:   8 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:   8 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  16 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  24 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:   0  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:   8  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  16  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  24  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+msg_len:  32 ad_len:  32  enc:      93 us:       5 ms:       0   dec:      93 us:       5 ms:       0 
+AEAD Test Disabled May 22 2021 22:18:14 Optimization: Ofast Algorithm: LWC_ALGO_ACE_128v1 Sections: text  12416 data    112 bss   1612 AEADTotRes: enc(0,0) = 93 dec(0,0) = 93 enc(0,8) = 93 dec(0,8) = 93 enc(0,16) = 93 dec(0,16) = 93 enc(0,24) = 93 dec(0,24) = 93 enc(0,32) = 93 dec(0,32) = 93 enc(8,0) = 93 dec(8,0) = 93 enc(8,8) = 93 dec(8,8) = 93 enc(8,16) = 93 dec(8,16) = 93 enc(8,24) = 93 dec(8,24) = 93 enc(8,32) = 93 dec(8,32) = 93 enc(16,0) = 93 dec(16,0) = 93 enc(16,8) = 93 dec(16,8) = 93 enc(16,16) = 93 dec(16,16) = 93 enc(16,24) = 93 dec(16,24) = 93 enc(16,32) = 93 dec(16,32) = 93 enc(24,0) = 93 dec(24,0) = 93 enc(24,8) = 93 dec(24,8) = 93 enc(24,16) = 93 dec(24,16) = 93 enc(24,24) = 93 dec(24,24) = 93 enc(24,32) = 93 dec(24,32) = 93 enc(32,0) = 93 dec(32,0) = 93 enc(32,8) = 93 dec(32,8) = 93 enc(32,16) = 93 dec(32,16) = 93 enc(32,24) = 93 dec(32,24) = 93 enc(32,32) = 93 dec(32,32) = 93 
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:18:33
+Optimization: O0
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  13768B Total RAM:   1724B 
+Sections: text  12820B data    112B bss   1612B
+msg_len:     0 hash:       102 us:        6 ms:      0 002339190A604B608421C9007B181A685B6892185B4179180A604B60194ABB18
+msg_len:     8 hash:       102 us:        6 ms:      0 002339190A604B608421C9007B181A685B6892185B4179180A604B60194ABB18
+msg_len:    16 hash:       102 us:        6 ms:      0 002339190A604B608421C9007B181A685B6892185B4179180A604B60194ABB18
+msg_len:    32 hash:       102 us:        6 ms:      0 002339190A604B608421C9007B181A685B6892185B4179180A604B60194ABB18
+msg_len:    64 hash:       102 us:        6 ms:      0 002339190A604B608421C9007B181A685B6892185B4179180A604B60194ABB18
+msg_len:   128 hash:       102 us:        6 ms:      0 002339190A604B608421C9007B181A685B6892185B4179180A604B60194ABB18
+msg_len:   256 hash:       102 us:        6 ms:      0 002339190A604B608421C9007B181A685B6892185B4179180A604B60194ABB18
+msg_len:   512 hash:       102 us:        6 ms:      0 002339190A604B608421C9007B181A685B6892185B4179180A604B60194ABB18
+msg_len:  1024 hash:       102 us:        6 ms:      0 002339190A604B608421C9007B181A685B6892185B4179180A604B60194ABB18
+HASH Test Disabled May 22 2021 22:18:33 Optimization: O0 Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  12820 data    112 bss   1612 HASHTotRes: h(0) = 102 h(8) = 102 h(16) = 102 h(32) = 102 h(64) = 102 h(128) = 102 h(256) = 102 h(512) = 102 h(1024) = 102 
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:18:52
+Optimization: O1
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  13160B Total RAM:   1724B 
+Sections: text  12220B data    112B bss   1612B
+msg_len:     0 hash:        93 us:        5 ms:      0 1F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A611D4A1A4BDA611D4A184BDA60
+msg_len:     8 hash:        93 us:        5 ms:      0 1F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A611D4A1A4BDA611D4A184BDA60
+msg_len:    16 hash:        93 us:        5 ms:      0 1F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A611D4A1A4BDA611D4A184BDA60
+msg_len:    32 hash:        93 us:        5 ms:      0 1F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A611D4A1A4BDA611D4A184BDA60
+msg_len:    64 hash:        93 us:        5 ms:      0 1F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A611D4A1A4BDA611D4A184BDA60
+msg_len:   128 hash:        93 us:        5 ms:      0 1F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A611D4A1A4BDA611D4A184BDA60
+msg_len:   256 hash:        93 us:        5 ms:      0 1F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A611D4A1A4BDA611D4A184BDA60
+msg_len:   512 hash:        93 us:        5 ms:      0 1F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A611D4A1A4BDA611D4A184BDA60
+msg_len:  1024 hash:        93 us:        5 ms:      0 1F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A611D4A1A4BDA611D4A184BDA60
+HASH Test Disabled May 22 2021 22:18:52 Optimization: O1 Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  12220 data    112 bss   1612 HASHTotRes: h(0) = 93 h(8) = 93 h(16) = 93 h(32) = 93 h(64) = 93 h(128) = 93 h(256) = 93 h(512) = 93 h(1024) = 93 
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:19:10
+Optimization: O2
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  13180B Total RAM:   1724B 
+Sections: text  12240B data    112B bss   1612B
+msg_len:     0 hash:        93 us:        5 ms:      0 D7FFA542F8D170BD6832000880B500AF244B34220021180000F085F8214B8022
+msg_len:     8 hash:        93 us:        5 ms:      0 D7FFA542F8D170BD6832000880B500AF244B34220021180000F085F8214B8022
+msg_len:    16 hash:        93 us:        5 ms:      0 D7FFA542F8D170BD6832000880B500AF244B34220021180000F085F8214B8022
+msg_len:    32 hash:        93 us:        5 ms:      0 D7FFA542F8D170BD6832000880B500AF244B34220021180000F085F8214B8022
+msg_len:    64 hash:        93 us:        5 ms:      0 D7FFA542F8D170BD6832000880B500AF244B34220021180000F085F8214B8022
+msg_len:   128 hash:        93 us:        5 ms:      0 D7FFA542F8D170BD6832000880B500AF244B34220021180000F085F8214B8022
+msg_len:   256 hash:        93 us:        5 ms:      0 D7FFA542F8D170BD6832000880B500AF244B34220021180000F085F8214B8022
+msg_len:   512 hash:        93 us:        5 ms:      0 D7FFA542F8D170BD6832000880B500AF244B34220021180000F085F8214B8022
+msg_len:  1024 hash:        93 us:        5 ms:      0 D7FFA542F8D170BD6832000880B500AF244B34220021180000F085F8214B8022
+HASH Test Disabled May 22 2021 22:19:10 Optimization: O2 Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  12240 data    112 bss   1612 HASHTotRes: h(0) = 93 h(8) = 93 h(16) = 93 h(32) = 93 h(64) = 93 h(128) = 93 h(256) = 93 h(512) = 93 h(1024) = 93 
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:19:29
+Optimization: O3
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  13192B Total RAM:   1724B 
+Sections: text  12252B data    112B bss   1612B
+msg_len:     0 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7432000880B500AF244B3422
+msg_len:     8 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7432000880B500AF244B3422
+msg_len:    16 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7432000880B500AF244B3422
+msg_len:    32 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7432000880B500AF244B3422
+msg_len:    64 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7432000880B500AF244B3422
+msg_len:   128 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7432000880B500AF244B3422
+msg_len:   256 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7432000880B500AF244B3422
+msg_len:   512 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7432000880B500AF244B3422
+msg_len:  1024 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7432000880B500AF244B3422
+HASH Test Disabled May 22 2021 22:19:29 Optimization: O3 Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  12252 data    112 bss   1612 HASHTotRes: h(0) = 93 h(8) = 93 h(16) = 93 h(32) = 93 h(64) = 93 h(128) = 93 h(256) = 93 h(512) = 93 h(1024) = 93 
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:19:47
+Optimization: Os
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  13140B Total RAM:   1724B 
+Sections: text  12216B data    112B bss   1612B
+msg_len:     0 hash:        93 us:        5 ms:      0 00F085F8214B802212051A601F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A61
+msg_len:     8 hash:        93 us:        5 ms:      0 00F085F8214B802212051A601F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A61
+msg_len:    16 hash:        93 us:        5 ms:      0 00F085F8214B802212051A601F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A61
+msg_len:    32 hash:        93 us:        5 ms:      0 00F085F8214B802212051A601F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A61
+msg_len:    64 hash:        93 us:        5 ms:      0 00F085F8214B802212051A601F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A61
+msg_len:   128 hash:        93 us:        5 ms:      0 00F085F8214B802212051A601F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A61
+msg_len:   256 hash:        93 us:        5 ms:      0 00F085F8214B802212051A601F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A61
+msg_len:   512 hash:        93 us:        5 ms:      0 00F085F8214B802212051A601F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A61
+msg_len:  1024 hash:        93 us:        5 ms:      0 00F085F8214B802212051A601F4B1A681E4B5A601E4A1D4B9A601E4A1B4B9A61
+HASH Test Disabled May 22 2021 22:19:47 Optimization: Os Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  12216 data    112 bss   1612 HASHTotRes: h(0) = 93 h(8) = 93 h(16) = 93 h(32) = 93 h(64) = 93 h(128) = 93 h(256) = 93 h(512) = 93 h(1024) = 93 
+
+
+
+Starting...
+Test Disabled
+May 22 2021 22:20:07
+Optimization: Ofast
+Algorithm: LWC_ALGO_HASH_XOODYAKV1
+Memory usage: Total FLASH:  13200B Total RAM:   1724B 
+Sections: text  12252B data    112B bss   1612B
+msg_len:     0 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7C32000880B500AF244B3422
+msg_len:     8 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7C32000880B500AF244B3422
+msg_len:    16 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7C32000880B500AF244B3422
+msg_len:    32 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7C32000880B500AF244B3422
+msg_len:    64 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7C32000880B500AF244B3422
+msg_len:   128 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7C32000880B500AF244B3422
+msg_len:   256 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7C32000880B500AF244B3422
+msg_len:   512 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7C32000880B500AF244B3422
+msg_len:  1024 hash:        93 us:        5 ms:      0 044E4518217830000134FFF7D7FFA542F8D170BD7C32000880B500AF244B3422
+HASH Test Disabled May 22 2021 22:20:07 Optimization: Ofast Algorithm: LWC_ALGO_HASH_XOODYAKV1 Sections: text  12252 data    112 bss   1612 HASHTotRes: h(0) = 93 h(8) = 93 h(16) = 93 h(32) = 93 h(64) = 93 h(128) = 93 h(256) = 93 h(512) = 93 h(1024) = 93 

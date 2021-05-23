@@ -1,0 +1,16 @@
+KeccakP-400-reference.c:66:6:KeccakP400_Initialize	8	static
+KeccakP-400-reference.c:73:6:KeccakP400_AddByte	8	static
+KeccakP-400-reference.c:81:6:KeccakP400_AddBytes	8	static
+KeccakP-400-reference.c:93:6:KeccakP400_OverwriteBytes	8	static
+KeccakP-400-reference.c:102:6:KeccakP400_OverwriteWithZeroes	8	static
+KeccakP-400-reference.c:118:6:KeccakP400_Permute_Nrounds	8	static
+KeccakP-400-reference.c:133:6:KeccakP400_Permute_20rounds	8	static
+KeccakP-400-reference.c:148:6:KeccakP400OnWords	16	static
+KeccakP-400-reference.c:155:6:KeccakP400Round	16	static
+KeccakP-400-reference.c:166:13:theta	48	static
+KeccakP-400-reference.c:183:13:rho	20	static
+KeccakP-400-reference.c:191:13:pi	72	static
+KeccakP-400-reference.c:202:13:chi	48	static
+KeccakP-400-reference.c:215:13:iota	0	static
+KeccakP-400-reference.c:222:6:KeccakP400_ExtractBytes	8	static
+KeccakP-400-reference.c:231:6:KeccakP400_ExtractAndAddBytes	16	static
