@@ -1,9 +1,0 @@
-photon.c:42:6:FieldMult	24	static
-photon.c:57:6:PrintState	24	static
-photon.c:69:6:PrintState_Column	24	static
-photon.c:81:6:AddKey	24	static
-photon.c:88:6:SubCell	24	static
-photon.c:96:6:ShiftRow	32	static
-photon.c:108:6:MixColumn	40	static
-photon.c:176:6:Permutation	24	static
-photon.c:193:6:PHOTON_Permutation	96	static

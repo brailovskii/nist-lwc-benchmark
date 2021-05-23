@@ -4,11 +4,11 @@ import sys
 import re
 
 def printRes(*args, **kwargs):
-    with open('res_aead.csv','a') as file:
+    with open('stm32f100rb_res_aead.csv','a') as file:
         print(*args, **kwargs, file=file)
 
 
-empty_prj_text_size = { "O0" : 11352, "O1" : 10828,  "O2" : 10820,  "O3" : 10832,  "Os" : 10792, "Ofast" : 10832 }
+empty_prj_text_size = { "O0" : 11464, "O1" : 10884,  "O2" : 10872,  "O3" : 10884,  "Os" : 10840, "Ofast" : 10884 }
 
 results_fn = "stm32f100rb_aead_hash_benchmark.txt"
 

@@ -142,7 +142,7 @@ for opt_lvl in opt_lvl_list[0:]:
     time.sleep(10)
 
 
-'''
+
 
 for algo in aead_algos_list[0:]:
     for opt_lvl in opt_lvl_list[0:]:
@@ -156,7 +156,7 @@ for algo in aead_algos_list[0:]:
         printLog("**** Sleeping 15 seconds, algorithm works on MCU")
         time.sleep(50)
     
-
+'''
  
 for algo in hash_algos_list[0:]:
     for opt_lvl in opt_lvl_list[0:]:
