@@ -10,7 +10,7 @@ def printRes(*args, **kwargs):
 
 empty_prj_text_size = { "O0" : 11464, "O1" : 10884,  "O2" : 10872,  "O3" : 10884,  "Os" : 10840, "Ofast" : 10884 }
 
-results_fn = "stm32f100rb_aead_hash_benchmark.txt"
+results_fn = "stm32f100rb_aead_prj_benchmark.txt"
 
 res_enc_dec_str = "type	algorithm	optimization	text	data	bss	enc(0,0)	dec(0,0)	enc(0,8)	dec(0,8)	enc(0,16)	dec(0,16)	enc(0,24)	dec(0,24)	enc(0,32)	dec(0,32)	enc(8,0)	dec(8,0)	enc(8,8)	dec(8,8)	enc(8,16)	dec(8,16)	enc(8,24)	dec(8,24)	enc(8,32)	dec(8,32)	enc(16,0)	dec(16,0)	enc(16,8)	dec(16,8)	enc(16,16)	dec(16,16)	enc(16,24)	dec(16,24)	enc(16,32)	dec(16,32)	enc(24,0)	dec(24,0)	enc(24,8)	dec(24,8)	enc(24,16)	dec(24,16)	enc(24,24)	dec(24,24)	enc(24,32)	dec(24,32)	enc(32,0)	dec(32,0)	enc(32,8)	dec(32,8)	enc(32,16)	dec(32,16)	enc(32,24)	dec(32,24)	enc(32,32)	dec(32,32)"
 

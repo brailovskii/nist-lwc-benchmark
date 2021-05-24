@@ -141,10 +141,10 @@ for opt_lvl in opt_lvl_list[0:]:
     printLog("**** Sleeping 1 seconds, algorithm works on MCU")
     time.sleep(10)
 
+'''
 
 
-
-for algo in aead_algos_list[0:]:
+for algo in aead_algos_list[80:]:
     for opt_lvl in opt_lvl_list[0:]:
         write_aead_header_file(opt_lvl, "ENABLE_ALGO_TEST", algo, "LWC_ALGO_AEAD")
         printLog("**** Compiling AEAD " + algo + " " + opt_lvl, end = " " )
@@ -156,8 +156,8 @@ for algo in aead_algos_list[0:]:
         printLog("**** Sleeping 15 seconds, algorithm works on MCU")
         time.sleep(50)
     
+
 '''
- 
 for algo in hash_algos_list[0:]:
     for opt_lvl in opt_lvl_list[0:]:
         write_aead_header_file(opt_lvl, "ENABLE_ALGO_TEST",algo, "LWC_ALGO_HASH")
@@ -170,7 +170,7 @@ for algo in hash_algos_list[0:]:
         printLog("**** Sleeping 15 seconds, algorithm works on MCU")
         time.sleep(30)
         
-
+'''
 
 
 #restore header file content

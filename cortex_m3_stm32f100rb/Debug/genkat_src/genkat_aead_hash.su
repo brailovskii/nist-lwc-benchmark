@@ -1,5 +1,5 @@
-genkat_aead_hash.c:81:5:genkat_benchmark_hash_aead	16	static
-genkat_aead_hash.c:218:5:hash_generate_test_vectors	1096	static
+genkat_aead_hash.c:81:5:genkat_benchmark_hash_aead	8	static
+genkat_aead_hash.c:122:5:aead_generate_test_vectors	280	static
 genkat_aead_hash.c:272:6:aead_hash_print_res	8	static
 genkat_aead_hash.c:277:6:init_buffer	8	static
 genkat_aead_hash.c:306:6:HAL_TIM_PeriodElapsedCallback	0	static
